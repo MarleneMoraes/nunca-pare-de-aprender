@@ -64,8 +64,34 @@ Software de controle de versão (VCS), versionamento de software ou código. Git
 | -dir          | -ls       |
 | -del / -rmdir | -rm / -rf |
 
-- Livro: 
+- Resolver conflitos ou alterações de pasta
 
+  1. Abrir com `git bash` a pasta desejada 
+
+  2. Digitar `git add .` ou `git add *` para adicionar os conflitos
+
+  3. Realizar um commit: digitar `git commit -m "[descrição breve do que foi feito]"`
+
+  4. Conferir status do Git com o comando `git status`
+
+  5. Para enviar as alterações adicionadas, digitar  `git push` (somente na master) ou  `git push origin [branch]`
+
+     
+
+- Transitar entre branches
+
+  - `git branch [nome da nova branch]`: criar nova *branch*
+  - `git checkout [nome da branch]`: redireciona para *branch* desejada
+  - `git branch -d [nome da branch]`: deleta a *branch* indicada
+  - `git merge [nome da branch]`: junta a *branch* atual com a indicada
+
+- Outros comandos
+
+  - `git show [nome do commit]`: mostra a situação do commit
+
+  - `git clone [URL do Repositório]`: Clona o repositório remoto para a sua pasta local
+
+- Livro: 
   - [Repositório do ProGit em Português do Brasil](https://github.com/progit/progit2-pt-br)
   - [Livro Oficial ProGit [English Version]](http://git-scm.com/book/en/v2)
 

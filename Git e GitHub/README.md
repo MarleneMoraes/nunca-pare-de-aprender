@@ -28,30 +28,3 @@ Git e GitHub são complementares e tem vantagens como:
   10. Enviar arquivos para o GitHub: `git push` (somente na master) ou  `git push origin [branch]`
 
   
-
-- Resolver conflitos ou alterações de pasta
-
-  1. Abrir com `git bash` a pasta desejada 
-
-  2. Digitar `git add .` ou `git add *` para adicionar os conflitos
-
-  3. Realizar um commit: digitar `git commit -m "[descrição breve do que foi feito]"`
-
-  4. Conferir status do Git com o comando `git status`
-
-  5. Para enviar as alterações adicionadas, digitar  `git push` (somente na master) ou  `git push origin [branch]`
-
-     
-
-- Transitar entre branches
-
-  - `git branch [nome da nova branch]`: criar nova *branch*
-  - `git checkout [nome da branch]`: redireciona para *branch* desejada
-  - `git branch -d [nome da branch]`: deleta a *branch* indicada
-  - `git merge [nome da branch]`: junta a *branch* atual com a indicada
-
-- Outros comandos
-
-  - `git show [nome do commit]`: mostra a situação do commit
-
-  - `git clone [URL do Repositório]`: Clona o repositório remoto para a sua pasta local
