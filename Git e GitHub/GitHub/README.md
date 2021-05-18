@@ -42,6 +42,56 @@ Plataforma de hospedagem de código-fonte baseado em Git, com características d
 
     `Security Key/Security log → Digital → Leitor de Digital`
 
+- Markdown (.md): linguagem de marcação utilizada em *README's*, *issues* e *pull requests*. Ela possui alta habilidade de leitura, por ser uma versão html mais simples
+
+  - Comandos:
+
+    - Negrito: `**` ou `__`
+
+    - Itálico: `*` ou `_`
+
+    - Riscado `~~`
+
+    - Linha hr `***` ou `---`
+
+    - Título: `# [texto]`
+
+      :warning: ​Quanto mais cerquilhas tiver, menor a hierarquia do título
+
+      Exemplo: `<h3>` = `###` 
+
+    - Listas:
+
+      - Numerada: `[número]. ` 
+      - Demarcada: `* `
+      - Tópico: `- `
+      - Tarefas: `-[ ]`
+
+    - Imagens: `![Nome](URL)`
+
+    - Tabela: 
+
+      ```markdown
+      Num|Nome|Nota 
+      ---|---|---
+      1|Gustavo|9,5
+      ```
+
+    - Código: 
+
+      - Uma linha ` `` `
+      - Mais de uma linha ` ``` [nome da linguagem] enter (aparecerá um bloco para digitar) `
+
+    - Emojis: `:[nome do emoji]:`
+
+      :warning:Para saber o nome dos emojis, acessar o [Repositório emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet) 
+
+    - Quote reply: `>`
+
+      Mostra recuado para citar outra resposta. 
+
+    
+
 - Outras anotações
 
   - Fotos do Octocat (gato com pernas de polvo da logo): https://octodex.github.com/
