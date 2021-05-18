@@ -7,7 +7,7 @@ Será para uso pessoal, mas você pode pegar qualquer dica por aqui que ficarei 
 
 - [ ] Algoritmos e Lógica da Programação
 - [ ] Banco de Dados
-- [ ] Git e Git Hub
+- [x] Git e Git Hub
 - [ ] HTML5 e CSS3
 - [ ] Java Básico
 - [ ] JavaScript
