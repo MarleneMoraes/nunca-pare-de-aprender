@@ -19,7 +19,7 @@ Software de controle de versão (VCS), versionamento de software ou código. Git
   - Segurança;
   - Organização.
 
-
+- Commit: pasta enviada para o Repositório central. Uma ou várias pessoas podem fazer seus próprios commits.
 
 - Branches: ramificação do código para evitar conflitos de versões
 

@@ -6,10 +6,10 @@ Será para uso pessoal, mas você pode pegar qualquer dica por aqui que ficarei 
 > ### Tecnologias abordadas
 
 - [ ] Algoritmos e Lógica da Programação
-
+- [ ] Banco de Dados
 - [ ] Git e Git Hub
 - [ ] HTML5 e CSS3
-- [ ] JavaScript
 - [ ] Java Básico
+- [ ] JavaScript
 - [ ] Linux
 
