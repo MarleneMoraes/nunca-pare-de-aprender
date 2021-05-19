@@ -87,5 +87,12 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
 - Relações entre os três níveis
 
   - Independência Física: interação nos níveis físico no conceitual, sem provocar modificações no nível conceitual.
-  - Independência Lógica: interação nos níveis
+  - Independência Lógica: interação nos níveis conceitual no de visão, sem provocar modificações no nível de visão. 
+
+- Etapas Usuais de um Projeto de Banco de Dados
+
+  1. Levantamento de requisitos (Requisitos da Aplicação) → necessidade de informação dos usuários finais
+  2. Projeto Conceitual (Modelo de Entidade-Relacionamento — MER) → descrever a estrutura de informação sem se preocupar em qual SGBD a base de dados estará.
+  3. Projeto Lógico (Modelo Relacional, orientado a objetos, etc.) → esquema lógico
+  4. Projeto Físico (Implementação do Banco de Dados) → visão macro do Banco de Dados
 
