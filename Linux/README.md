@@ -207,4 +207,53 @@ Sistema Operacional livre e gratuito, código-fonte aberto e adaptável para qua
 
   - Script: linguagem de programação que executa no sistema em tempo de execução, muito utilizado para automação. 
 
-    
+  - Comandos:
+
+    - Criação de arquivos vazios ou alteração de data e hora do arquivo: `touch`
+
+      - Criar múltiplos arquivos: `touch [nome do arquivo 1] [nome do arquivo 2]`
+
+      - Alterar a hora de acesso: `touch -a [nome do arquivo]`
+
+      - Alterar a hora da modificação: `touch -m`
+
+      - Alterar a hora de acesso sem criar novo arquivo: `touch -c`
+
+      - Definir hora específica de acesso e modificações usando *touch*: 
+
+        `touch -t [aaaa mm dd hh minmin ss] [nome do arquivo]`
+
+    - Criar, unir e exibir arquivos: `cat` (concatenate)
+
+      - Colocar o resultado em um outro arquivo: `cat arq 1 > arquivo final`
+
+        ( > é um redirecionador de arquivo)
+
+        :warning: Parar a rolagem de tela e permitir a navegação, use o *pipe* |
+
+    - Mover ou renomeia  arquivos e diretórios: `mv`
+
+      - Confirmar antes de substituir: `mv -i`
+      - Sem substituição: `mv -n`
+      - Substituição pelo *backup*: `mv -b`
+      - Substituição se o arquivo de destino for antigo ou não existir: `mv -u`
+
+    - Cópia de arquivos ou diretórios para outro local, sem confirmação de existência ou não, exceto se usar a `flag -i` (interativa). Nenhuma saída será exibida, exceto se usar o `flag -v` (verbose).
+
+      - Criar *hard links* em vez de copiar os arquivos: `cp -l`
+      - Criar links simbólicos em vez de copiar arquivos: `cp -s`
+      - Copiar apenas quando o arquivo de origem for mais novo do que o arquivo de destino ou quando o arquivo de destino não existir: `cp -u`
+
+    - Procurar arquivos: `find`
+
+      `find ./-type f -name "[letra]"`
+
+      `find ./-type d -name "[palavra]"`
+
+    - Compara arquivos e diretórios: `diff`
+
+    - Variáveis de ambiente: `env`
+
+      - Prompt da linha de comandos: `PS1`
+      - Diretório "/home" de um usuário: `Home` 
+      - Lista de diretórios vasculhados quando um comando é executado: `path`
