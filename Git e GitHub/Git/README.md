@@ -2,7 +2,7 @@
 
 <small>Criador: <a href="https://github.com/torvalds">Linus Torvalds</a> <br/>Ano: 2005</small> 
 
-<img src="D:\Usuários\Matheus\Documents\GitHub\never-stop-learning\Git e GitHub\Git\1200px-Git-logo.svg.png" alt="1200px-Git-logo.svg" align="right" style="zoom:20%;" />Software de controle de versão (VCS), versionamento de software ou código. Git é uma interface de linha de comandos (Command-Line Interface - CLI), ou seja, não tem interface gráfica.
+<img src=".\git-logo.png" alt="1200px-Git-logo.svg" align="right" />Software de controle de versão (VCS), versionamento de software ou código. Git é uma interface de linha de comandos (Command-Line Interface - CLI), ou seja, não tem interface gráfica.
 
 - :question: O que quer dizer Git? (Respostas de Torvalds)
   - Três letras do alfabeto
@@ -22,7 +22,7 @@
   - Preparado (*staged*): estado de preparação do arquivo para ser enviado para o Repositório Central. 
   - Consolidado (*commited*): salvamento dos arquivos preparados e enviados para o Repositório Central. 
 
-![Os três estados](D:\Usuários\Matheus\Documents\GitHub\never-stop-learning\Git e GitHub\Git\Os três estados.png)
+<img src=".\Os três estados.png" alt="Os três estados"/>
 
 <small>Disponível em: <a href="https://medium.com/@devmasterteam/git-ebook-8808f7301054">Git — Os três estados</a></small>
 
