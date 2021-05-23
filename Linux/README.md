@@ -23,51 +23,107 @@ Sistema Operacional livre e gratuito, código-fonte aberto e adaptável para qua
 
 - Comandos do Shell
 
-  - Saída do caminho local: `pwd`
+  - Diretórios
 
-  - Mostra os diretórios: `dir`
-
-  - Lista todos os arquivos e diretórios: `ls`
-
-    - Lista o que está na pasta solicitada: `ls + [nome da pasta]` 
-    - Lista detalhes como hora `ls -l` ; 
-    - Lista conteúdo, até pastas ocultas:`ls -a`
-
-  - Mudar o caminho que está trabalhando do diretório (*change direction*): `cd`
-
-    - Abre o diretório: `cd/`
-    - Abre o diretório recorrente: `cd ~`
-    - Volta para o diretório: `..cd`
+    - Criar diretório (*making direction*): `mkdir`
+    - Mostra os diretórios: `dir`
+    - Lista todos os arquivos e diretórios: `ls`
+      - Lista o que está na pasta solicitada: `ls + [nome da pasta]` 
+      - Lista detalhes como hora `ls -l` ; 
+      - Lista conteúdo, até pastas ocultas:`ls -a`
+    - Mudar o caminho que está trabalhando do diretório (*change director*): `cd`
+      - Abre o diretório: `cd/`
+      - Abre o diretório recorrente: `cd ~`
+      - Volta para o diretório: `..cd`
 
     Ver mais em: [Dicas de Uso para o Comando cd do Linux](http://www.dltec.com.br/blog/linux/dicas-de-uso-para-o-comando-cd-do-linux/)
 
-  - Criar diretório (*making direction*): `mkdir`
+    - Saída do caminho local: `pwd`
 
-  - Mostra o manual [em inglês] do comando solicitado: `man`
+  - Manual
 
-    :warning:Para o manual em Português do Brasil, o comando torna-se `--help`
+    - Mostra o manual [em inglês] do comando solicitado: `man`
 
-    <u>Exemplo:</u> man ls (para parar, `CTRL + Z`
+      <u>Exemplo:</u> man ls (para parar, `CTRL + Z`
 
-  - Imprime as 10 primeiras linhas: `head`
+    - Mostra o manual em Português do Brasil: `--help`
 
-  - Imprime as 10 últimas linhas: `tail`
+  - Imprime:
 
-  - Imprime o calendário: `cal`
-
-  - Imprime a data e a hora de hoje: `tail`
-
-  - Imprime o tipo de arquivo: `file`
+    - As 10 primeiras linhas: `head`
+    - As 10 últimas linhas: `tail`
+    - Calendário: `cal`
+    - A data e a hora de hoje: `tail`
+    - Tipo de arquivo: `file`
 
   - Localiza e destaca a palavra desejada: `grep`
 
   - Configurações de rede:`ifconfig`
 
-  - Imprime usuário e data: `who`
+  - Controle de Usuários
 
-  - Imprime descrição do usuário: `whoami`
+    - Cria o usuário com senha e informações pessoais: `adduser`
 
-    
+      :warning:Somente o *root* pode criar usuários no sistema, então coloca-se o termo `sudo` para realizar a transação
+
+    - Remove um usuário e sua pasta pessoal: `userdel -r [nome do usuário]`
+
+    -  Troca de usuário:`su`
+
+    - Alteração de senha: `passwd`
+
+    - Usuário e data: `who`
+
+    - Descrição do usuário: `whoami`
+
+    - Últimos logins na máquina: `lastlog`
+
+    - Listagem de entrada e saída do usuário no sistema: `last`
+
+    - Identificadores do usuário: `id`
+
+    - Exibição de todos os usuários: `cat/etc/passwd`
+
+  - Controle de Grupos
+
+    - Exibição de todos os grupos do sistema: `cat/etc/group`
+    - Exibição de todos os grupos que o usuário pertence: `groups`
+    - Adicionar grupo: `addgroup`
+    - Remover grupo: `groupdel [nome do grupo]`
+    - Adicionar o usuário a um grupo: `add user group` ou `g passwd -a`
+    - Remove o usuário de um grupo: `g passwd -d`
+
+  - Permissões: restringem arquivos e diretórios para leitura, escrita e execução.
+
+    - Muda a permissão de um arquivo ou diretório (funciona em modo octal)
+
+      | `r`  (read - ler) | `w` (write - escrever) | `x` (execute - executar) |
+      | ----------------- | ---------------------- | ------------------------ |
+      | 4                 | 2                      | 1                        |
+
+      :warning:Para atribuir apenas a um usuário, grupo ou outros, deve representar com o número indicado para atribuir e 0 para não atribuir
+
+      <u>Exemplo:</u>
+
+      Usuário executa, escreve e lê. O grupo e outros não possui permissão.
+
+      | usuário | grupo | outros |
+      | ------- | ----- | ------ |
+      | 1       | 0     | 0      |
+      | 2       | 0     | 0      |
+      | 4       | 0     | 0      |
+
+      Caso queira atribuir mais de uma permissão, basta apenas **somar** os valores da permissão.
+
+      <u>Exemplo:</u>
+
+      Usuário pode ler e executar (4+1). O grupo pode ler e escrever (4+2). Outros podem ler, escrever e executar (4+2+1).
+
+      | usuário | grupo | outros |
+      | ------- | ----- | ------ |
+      | 5       | 6     | 7      |
+
+      
 
 - Operadores
 
@@ -102,7 +158,7 @@ Sistema Operacional livre e gratuito, código-fonte aberto e adaptável para qua
   - Diretório do usuário *root*: `/root/`
   - Diretório virtual controlado pelo kernel: `/proc/`
 
-- Controle de usuários, grupos e permissões
+  
 
 - Compactação, descompactação e arquivamento
 
