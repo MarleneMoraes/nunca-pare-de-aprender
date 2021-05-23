@@ -12,4 +12,5 @@ Será para uso pessoal, mas você pode pegar qualquer dica por aqui que ficarei 
 - [ ] Java Básico
 - [ ] JavaScript
 - [ ] Linux
+- [x] Redes de Computadores
 
