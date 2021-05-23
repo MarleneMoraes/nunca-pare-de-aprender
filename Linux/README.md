@@ -182,7 +182,23 @@ Sistema Operacional livre e gratuito, código-fonte aberto e adaptável para qua
     - Descompactação: `tar -xvf`
     - Extrair para outro diretório: `tar -c`
 
-- Pacotes
+- Pacotes (.deb, .rpm)
+
+  Programas colocados dentro de um arquivo identificados por sua extensão, e incluem arquivos necessários para a instalação do programa. 
+
+  - Gerenciadores de pacotes: sistemas que possuem resolução automática de dependências entre pacotes, método fácil de instalação de pacotes. 
+
+    <u>Exemplos:</u> dpkg apt, yum.
+
+  - Instalação: `sudo apt install [nome do pacote]`
+
+  - Atualização: `sudo apt upgrade [nome do pacote]`
+
+  - Remoção: `sudo apt remove [nome do pacote]`
+
+  - Atualização do sistema: `apt update && apt upgrade`
+
+  - Sites de pacotes: `pkgs.org`; `rpm`;`bone.net`
 
 - Shell Script
 
