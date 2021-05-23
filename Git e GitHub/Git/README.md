@@ -2,14 +2,13 @@
 
 <small>Criador: <a href="https://github.com/torvalds">Linus Torvalds</a> <br/>Ano: 2005</small> 
 
-Software de controle de versão (VCS), versionamento de software ou código. Git é uma interface de linha de comandos (Command-Line Interface - CLI), ou seja, não tem interface gráfica.
+<img src="D:\Usuários\Matheus\Documents\GitHub\never-stop-learning\Git e GitHub\Git\1200px-Git-logo.svg.png" alt="1200px-Git-logo.svg" align="right" style="zoom:20%;" />Software de controle de versão (VCS), versionamento de software ou código. Git é uma interface de linha de comandos (Command-Line Interface - CLI), ou seja, não tem interface gráfica.
 
 - :question: O que quer dizer Git? (Respostas de Torvalds)
   - Três letras do alfabeto
   - Teimoso, cabeça-dura, pensa que sempre está certo
   - Global Information Tracker (Rastreador de informações globais)
   - Goddamn Idiot Truckland of Shit (Maldito caminhão idiota de m*rda)
-
 - Vantagens
   - Controle de histórico de edições;
   - Trabalho em equipe;
@@ -18,8 +17,14 @@ Software de controle de versão (VCS), versionamento de software ou código. Git
   - Gerenciamento de Arquivos;
   - Segurança;
   - Organização.
+- Os três estados do arquivo:
+  - Modificado (*modified*) : alteração no arquivo, seja porque o mesmo foi adicionado, alterado ou removido. 
+  - Preparado (*staged*): estado de preparação do arquivo para ser enviado para o Repositório Central. 
+  - Consolidado (*commited*): salvamento dos arquivos preparados e enviados para o Repositório Central. 
 
-- Commit: pasta enviada para o Repositório central. Uma ou várias pessoas podem fazer seus próprios commits.
+![Os três estados](D:\Usuários\Matheus\Documents\GitHub\never-stop-learning\Git e GitHub\Git\Os três estados.png)
+
+<small>Disponível em: <a href="https://medium.com/@devmasterteam/git-ebook-8808f7301054">Git — Os três estados</a></small>
 
 - Branches: ramificação do código para evitar conflitos de versões
 
@@ -32,7 +37,7 @@ Software de controle de versão (VCS), versionamento de software ou código. Git
 
 - Simplificação de Branches: 
 
-  - Git flow: extensão para facilitar a dinâmica de trabalho
+  - *Git flow*: extensão para facilitar a dinâmica de trabalho
 
 
 
@@ -68,9 +73,9 @@ Software de controle de versão (VCS), versionamento de software ou código. Git
 
   1. Abrir com `git bash` a pasta desejada 
 
-  2. Digitar `git add .` ou `git add *` para adicionar os conflitos
+  2. Digitar `git add .` ou `git add *` para preparar o arquivo para envio
 
-  3. Realizar um commit: digitar `git commit -m "[descrição breve do que foi feito]"`
+  3. Realizar um *commit*: digitar `git commit -m "[descrição breve do que foi feito]"`
 
   4. Conferir status do Git com o comando `git status`
 
