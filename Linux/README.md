@@ -162,6 +162,26 @@ Sistema Operacional livre e gratuito, código-fonte aberto e adaptável para qua
 
 - Compactação, descompactação e arquivamento
 
+  - Compactadores são programas que diminuem o tamanho de um arquivo ou diretório. 
+
+    <u>Exemplos:</u> zip, rar (mais conhecidos); bzip2, gzip (Linux).
+
+    - Compactador zip (.zip): 
+      - Descompactação:`unzip`
+    - Compactador rar (.rar): no Linux, precisa ser instalado na primeira utilização, onde utiliza o comando `rar a`. Para descompactar, utiliza-se os comandos `rar x + rm .rar` no terminal.
+    - Compactador bzip2 (.bz2): 
+      - Descompactação:`bz2 -d`
+    - Compactador gzip (.txt.gz): no Linux, é o compactador mais utilizado e tem uma excelente taxa de compactação (quanto maior o arquivo original, menor a versão compacta é). 
+      - Descompactação:`gunzip`
+
+  - Extensões: identificam o tipo de um arquivo.
+
+  - Arquivadores (`tar`): juntam vários arquivos em um só, podendo ser usado em um conjunto com um compactador para armazenamento.
+
+    <u>Exemplo:</u> `tar -cf [nome do arquivo].tar [nome do arquivo]`.
+    - Descompactação: `tar -xvf`
+    - Extrair para outro diretório: `tar -c`
+
 - Pacotes
 
 - Shell Script
