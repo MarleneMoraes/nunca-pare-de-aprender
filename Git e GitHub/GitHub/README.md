@@ -1,6 +1,6 @@
 # GitHub
 
-<img src="D:\Usuários\Matheus\Documents\GitHub\never-stop-learning\Git e GitHub\GitHub\Octocat.svg.png" align="right" alt="Octocat.svg" style="zoom:20%;" /><small>Criadores: <a href="https://github.com/defunkt">Chris Wanstrath</a>, <a href="https://github.com/pjhyett">P. J. Hyett</a>, <a href="https://github.com/schacon">Scott Chacon</a>, <a href="https://github.com/mojombo">Tom Preston-Werner</a> <br/>Ano: 2008</small>
+<img src=".\Octocat.png" align="right" alt="Octocat.svg" style="zoom:20%;" /><small>Criadores: <a href="https://github.com/defunkt">Chris Wanstrath</a>, <a href="https://github.com/pjhyett">P. J. Hyett</a>, <a href="https://github.com/schacon">Scott Chacon</a>, <a href="https://github.com/mojombo">Tom Preston-Werner</a> <br/>Ano: 2008</small>
 
 Plataforma de hospedagem de código-fonte baseado em Git, com características de rede social para programadores. Em 2018, foi adquirido pela Microsoft e em 2020, adquire a npm. 
 
@@ -13,7 +13,7 @@ Plataforma de hospedagem de código-fonte baseado em Git, com características d
 
 
 
-![Repositories](D:\Usuários\Matheus\Documents\GitHub\never-stop-learning\Git e GitHub\GitHub\repositories.jpg)
+![Repositories](.\repositories.jpg)
 
 <small>Disponível em: <a href="https://terminalroot.com.br/assets/img/cursos/git.jpg">**Tutorial de Git e GitHub para Iniciantes**</a></small>
 
