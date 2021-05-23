@@ -1,8 +1,8 @@
 # GitHub
 
-<img src=".\Octocat.png" align="right" alt="Octocat.svg" style="width:20%;" /><small>Criadores: <a href="https://github.com/defunkt">Chris Wanstrath</a>, <a href="https://github.com/pjhyett">P. J. Hyett</a>, <a href="https://github.com/schacon">Scott Chacon</a>, <a href="https://github.com/mojombo">Tom Preston-Werner</a> <br/>Ano: 2008</small>
+<small>Criadores: <a href="https://github.com/defunkt">Chris Wanstrath</a>, <a href="https://github.com/pjhyett">P. J. Hyett</a>, <a href="https://github.com/schacon">Scott Chacon</a>, <a href="https://github.com/mojombo">Tom Preston-Werner</a> <br/>Ano: 2008</small>
 
-Plataforma de hospedagem de código-fonte baseado em Git, com características de rede social para programadores. Em 2018, foi adquirido pela Microsoft e em 2020, adquire a npm. 
+<img src=".\Octocat.png" align="right" alt="Octocat.svg"  />Plataforma de hospedagem de código-fonte baseado em Git, com características de rede social para programadores. Em 2018, foi adquirido pela Microsoft e em 2020, adquire a npm. 
 
 - Características:
 
