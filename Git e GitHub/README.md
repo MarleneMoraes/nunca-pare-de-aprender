@@ -1,6 +1,6 @@
 # Git e GitHub
 
-Git e GitHub são complementares e tem vantagens como:
+<img src=".\Git-e-GitHub.png" alt="Git e GitHub logos" align="right"/>Git e GitHub são complementares e tem vantagens como:
 
 1. Controle de versão
 2. Armazenamento em nuvem
