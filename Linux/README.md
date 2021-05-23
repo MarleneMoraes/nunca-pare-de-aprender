@@ -61,22 +61,34 @@ Sistema Operacional livre e gratuito, código-fonte aberto e adaptável para qua
 
   - Localiza e destaca a palavra desejada: `grep`
 
-  - 
+  - Configurações de rede:`ifconfig`
+
+  - Imprime usuário e data: `who`
+
+  - Imprime descrição do usuário: `whoami`
+
+    
 
 - Operadores
 
   - Permite usar dois comandos e separar suas saídas: `&` ou `&&` 
+
   - Envia a saída de um comando para a entrada de outro comando, permitindo a execução de dois comandos: `|`
+
   - Redireciona a saída de um comando para outro comando ou arquivo: `>`
+
   - Direciona a entrada de um arquivo para a saída de um comando: `<`
+
   - Redireciona a saída e adiciona a mesma para um comando ou arquivo: `>>`
+
+    
 
 - Diretórios
 
   - Diretório raiz: `/`
   - Binários executáveis principais dos usuários: `/bin/`
   - Arquivos de sistema de Boot (arquivos para carregar o sistema operacional): `/boot/`
-  - Arquivos de dispositivos: `/dev/`
+  - Arquivos de dispositivos, encontra-se a interface de rede: `/dev/`
   - Arquivos de configuração do sistema: `/etc/`
   - Diretório dos usuários comuns do sistema: `/home/`
   - Bibliotecas essenciais do sistema e os módulos do kernel: `/lib/`
@@ -89,8 +101,6 @@ Sistema Operacional livre e gratuito, código-fonte aberto e adaptável para qua
   - Diretório com arquivos variáveis gerados pelos programas do sistema (impressoras, e-mail, cache): `/var/`
   - Diretório do usuário *root*: `/root/`
   - Diretório virtual controlado pelo kernel: `/proc/`
-
-- Redes
 
 - Controle de usuários, grupos e permissões
 
