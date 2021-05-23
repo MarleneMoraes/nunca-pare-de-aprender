@@ -26,6 +26,8 @@ Sistema Operacional livre e gratuito, código-fonte aberto e adaptável para qua
   - Diretórios
 
     - Criar diretório (*making direction*): `mkdir`
+    - Remover o diretório vazio: `rmdir`
+    -  Remover o diretório não-vazio: `rm rf`
     - Mostra os diretórios: `dir`
     - Lista todos os arquivos e diretórios: `ls`
       - Lista o que está na pasta solicitada: `ls + [nome da pasta]` 
@@ -201,4 +203,8 @@ Sistema Operacional livre e gratuito, código-fonte aberto e adaptável para qua
   - Sites de pacotes: `pkgs.org`; `rpm`;`bone.net`
 
 - Shell Script
+  - Shell: interface de usuário para acessar os serviços de um sistema operacional.
 
+  - Script: linguagem de programação que executa no sistema em tempo de execução, muito utilizado para automação. 
+
+    
