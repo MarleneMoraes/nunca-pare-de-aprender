@@ -1,16 +1,32 @@
 # Nunca pare de aprender
-Este repositório é uma espécie de caderno de anotações de meus aprendizados até o momento das tecnologias, já que faço muitos cursos até do mesmo assunto e aprendo coisas novas, mas nem sempre posso carregar meu caderno de papel comigo. 
+Este repositório é uma espécie de caderno de anotações de nossos aprendizados até o momento das tecnologias, já que fazemos muitos cursos até do mesmo assunto e aprendemos coisas novas, mas nem sempre posso carregar o caderno de papel. 
 
-Será para uso pessoal, mas você pode pegar qualquer dica por aqui que ficarei honrada em poder te ajudar. Se tiver alguma dica ou erro que você encontrou de más práticas ou digitação por exemplo, pode fazer uma *issue* que aprenderei com você também. 
+Será para uso pessoal, mas você pode pegar qualquer dica por aqui que ficaremos honrados em poder te ajudar. Se tiver alguma dica ou erro que você encontrou de más práticas ou digitação por exemplo, pode fazer uma *issue* que aprenderemos com você também. 
 
 > ### Tecnologias abordadas
 
-- [ ] Algoritmos e Lógica da Programação
-- [ ] Banco de Dados
-- [x] Git e Git Hub
-- [ ] HTML5 e CSS3
-- [ ] Java Básico
-- [ ] JavaScript
-- [x] Linux
-- [x] Redes de Computadores
+- Algoritmos e Lógica da Programação
+
+- Banco de Dados
+
+- Git e Git Hub
+
+- HTML5 e CSS3
+
+- Java Básico
+
+- JavaScript
+
+- Linux
+- Python
+
+- Redes de Computadores
+
+
+
+> ### Equipe
+
+| <img src="https://unavatar.now.sh/github/gabcarvalhaes" alt="Gabriel" width="200px" /> | <img src="https://unavatar.now.sh/github/marlenemoraes" alt="Marlene" width="200px"/> |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Gabriel Carvalhaes <br/>(@gabcarvalhaes)                     | Marlene Moraes<br/> (@MarleneMoraes)                         |
 
