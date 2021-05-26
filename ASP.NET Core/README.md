@@ -16,7 +16,7 @@ Sucessor do ASP, é uma tecnologia da Microsoft voltada a desenvolvimento de apl
 
 Outras fontes sobre o assunto: [.NET (A Plataforma Completa de Desenvolvimento de Softwares) // Dicionário do Programador](https://www.youtube.com/watch?v=hlgm_1Bzt-4) [.NET 5 - O futuro da plataforma .NET](http://www.macoratti.net/19/07/net5_net1.htm)
 
-![.NET 5](.\dotnet5_platform.png)
+<img src=".\dotnet5_platform.png" alt=".NET 5" />
 
 - Características
   - Construção de aplicações modernas;
