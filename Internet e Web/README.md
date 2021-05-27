@@ -14,9 +14,9 @@ Comunicação entre computadores, permitindo a troca de dados entre eles atravé
 
 ARPANET	→ Milnet (militares)
 
-​					→ NSFnet (universidades)
+        → NSFnet (universidades)
 
-​					→ Comercial
+        → Comercial
 
 ### Web
 
@@ -28,7 +28,7 @@ Para o usuário possuir acesso aos hipertextos e hipermídias, é digitado a *Un
 
 Para o estabelecimento dessas regras, foi necessário a criação de uma linguagem de marcação para definir o formato de escrita dos hipertextos e hipermídia, que trafegam a internet: *HyperText Markup Language* [(HTML)](https://developer.mozilla.org/pt-BR/docs/Web/HTML). 
 
-<img src="/HTTP & layers.png"><small>Disponível em: [Uma visão geral do HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview)</small>
+<img src="./HTTP & layers.png"><small>Disponível em: [Uma visão geral do HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview)</small>
 
 - História
 
@@ -63,7 +63,7 @@ Para o estabelecimento dessas regras, foi necessário a criação de uma linguag
 
       
 
-<img src="/webstacks.png">
+<img src="./webstacks.png">
 
 [Saiba mais [em inglês]](https://tsh.io/blog/web-development-stacks/)
 
