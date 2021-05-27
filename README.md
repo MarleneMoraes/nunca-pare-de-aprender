@@ -6,20 +6,16 @@ Será para uso pessoal, mas você pode pegar qualquer dica por aqui que ficaremo
 > ### Tecnologias abordadas
 
 - Algoritmos e Lógica da Programação
-
+- ASP.NET Core
 - Banco de Dados
-
+- CSS3
 - Git e Git Hub
-
-- HTML5 e CSS3
-
+- HTML5
+- Internet e Web (Conceitos) 
 - Java Básico
-
 - JavaScript
-
 - Linux
 - Python
-
 - Redes de Computadores
 
 
