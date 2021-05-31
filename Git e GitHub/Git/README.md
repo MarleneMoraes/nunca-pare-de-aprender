@@ -93,8 +93,8 @@
 - Outros comandos
 
   - `git show [nome do commit]`: mostra a situação do commit
-
-  - `git clone [URL do Repositório]`: Clona o repositório remoto para a sua pasta local
+- `git clone [URL do Repositório]`: Clona o repositório remoto para a sua pasta local
+  - `git config --global credential.helper wincred`: inclusão automática de credenciais evitando que o usuário tenha que inserir as credenciais a cada commit que realizar.
 
 - Livro: 
   - [Repositório do ProGit em Português do Brasil](https://github.com/progit/progit2-pt-br)
