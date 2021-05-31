@@ -11,12 +11,11 @@ Comunicação entre computadores, permitindo a troca de dados entre eles atravé
   O Projeto Arpanet surgiu em 1969 na Guerra Fria, com objetivos militares: interligar as bases militares e laboratórios de pesquisa dos Estados Unidos para garantir a segurança da comunicação, mesmo em ataques inimigos. A Agência de Projetos de Pesquisas Avançadas de Defesa [(DARPA)](https://www.darpa.mil/) dos Estados Unidos foi a encarregada pela Arpanet e utilizava o protocolo de comunicação de pacotes *Network Control Protocol* (NCP)  para unificar as linguagens dos quatro computadores da Arpanet. 
 
   No final da década de 1970, o crescimento da Arpanet não comportava mais o NCP, e precisou utilizar outro protocolo, o *Transfer Control Protocol/Internet Protocol* (TCP/IP). Com a atualização do protocolo, na década de 1980, surge a Internet Moderna mas, somente em 1987, ela passa a ter uso Comercial. Um ano após, a Internet chega ao Brasil.
-
-ARPANET	→ Milnet (militares)
-
-        → NSFnet (universidades)
-
-        → Comercial
+  
+  - ARPANET
+    - Milnet (militares)
+    - NSFnet (universidades)
+    - Comercial
 
 ### Web
 
