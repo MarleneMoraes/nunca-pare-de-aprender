@@ -95,6 +95,8 @@
   - `git show [nome do commit]`: mostra a situação do commit
   - `git clone [URL do Repositório]`: Clona o repositório remoto para a sua pasta local
   - `git config --global credential.helper wincred`: inclusão automática de credenciais evitando que o usuário tenha que inserir as credenciais a cada commit que realizar.
+  - `code .`: abre a pasta que se encontra no Visual Studio Code
+  - `explorer .`: abre o Explorador de Arquivos
 
 - Livro: 
   - [Repositório do ProGit em Português do Brasil](https://github.com/progit/progit2-pt-br)

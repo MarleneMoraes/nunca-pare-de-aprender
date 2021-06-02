@@ -5,9 +5,10 @@ Será para uso pessoal, mas você pode pegar qualquer dica por aqui que ficaremo
 
 > ### Tecnologias abordadas
 
+- .NET 
 - Algoritmos e Lógica da Programação
-- ASP.NET Core
 - Banco de Dados
+- C#
 - CSS3
 - Git e Git Hub
 - HTML5
