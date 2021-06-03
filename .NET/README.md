@@ -60,24 +60,23 @@ Outras fontes sobre o assunto: [.NET (A Plataforma Completa de Desenvolvimento d
 
   
 
-  ## Command-Line Interface (CLI)
+## Orientação a objetos em .NET
+
+O .NET trabalha com a linguagem C# por padrão e tudo nele é orientada a objetos, até mesmo os dados mais simples.
+
+
+
+## Command-Line Interface (CLI)
 
 - `dotnet --version`: mostra a versão do .NET instalada na máquina
-
 - `dotnet --help`: mostra a documentação da linha de comando do .NET em inglês
-
 - `dotnet --info`: mostra todas as versões instaladas da máquina caso não a tenha formatado, além de informações da própria máquina
-
 - `dotnet new`: criar novos projetos .NET
   - `dotnet new --help` ou `dotnet new -h`: mostra a documentação do comando new, com todos os templates de aplicações e suas respectivas linguagens
   - `dotnet new [tipo do projeto] --name [nome do projeto]` ou `dotnet new [tipo do projeto] -n [nome do projeto]`: escaneia o nome do novo projeto que será criado
-
 - `dotnet publish`: publica o site com as aplicações
-
 - `dotnet restore`: restaurar os pacotes do .NET
-
 - `dotnet run`: constrói e executa a aplicação
-
 - `dotnet tool`: instala e gerencia ferramentas da .NET
 
 

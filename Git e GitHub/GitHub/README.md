@@ -100,7 +100,7 @@
 
 - Outras anotações
 
-  - Fotos do Octocat (gato com pernas de polvo da logo): https://octodex.github.com/
+  - [Fotos do Octocat (gato com pernas de polvo da logo)](https://octodex.github.com/)
 
   
 
