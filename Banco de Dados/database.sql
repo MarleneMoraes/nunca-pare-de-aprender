@@ -4,13 +4,17 @@ CREATE TABLE novaTabela (
 	id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
 
     /* Outros dados que podem ser alterados*/
-    nome VARCHAR(20) NOT NULL,
+    nome VARCHAR 20 NOT NULL,
     nascimento DATE
 )
 
-/*Para inserir dados na tabela*/
+/* Para inserir dados na tabela */
 INSERT INTO novaTabela (nome, nascimento) VALUES ('Marlene', '1994-10-11')
 INSERT INTO novaTabela (nome, nascimento) VALUES ('Helena', '2002-12-20')
+
+/* Para alterar algo da tabela (neste caso, adicionando uma coluna após a coluna nascimento) */
+ALTER TABLE .novaTabela ADD genero VARCHAR (1) NOT NULL AFTER nascimento;
+
 
 /* Para selecionar um dado*/
 SELECT nome FROM novaTabela
@@ -34,3 +38,14 @@ SELECT * FROM novaTabela WHERE id=2;
 DELETE FROM novaTabela WHERE id=5;
 
 
+/* Ordenar dados */
+SELECT * FROM novaTabela ORDER BY nome
+
+/* Ordenar dados de forma decrescente */
+SELECT * FROM novaTabela ORDER BY nome DESC
+
+/* Agrupamento de dados */
+SELECT * FROM pessoa GROUP BY genero; 
+
+/* Fazer a contagem dos dados do agrupamento selecionado */
+SELECT COUNT (genero) FROM novaTabela GROUP BY genero;
