@@ -2,7 +2,7 @@
 
 <small>Criador: <a href="https://github.com/microsoft">Microsoft</a> <br/>Ano: 2000 (.NET framework), 2016 (.NET Core), 2019 (.NET 5)</small>
 
-Infraestrutura para o desenvolvimento de software criada pela Microsoft e é desenvolvida para e executa em implementações do .NET, desenvolvida e suportada por C#, F# e VB (Visual Basic).
+Infraestrutura para o desenvolvimento de software criada pela Microsoft e é desenvolvida para e executa em implementações da plataforma gratuita, multi-plataforma e de código aberto .NET, desenvolvida e tem suporte às linguagens C#, F# e VB (Visual Basic).
 
 - .NET Core
 
