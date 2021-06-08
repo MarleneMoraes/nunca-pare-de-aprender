@@ -1,52 +1,59 @@
 import java.util.Scanner; //importar a classe Scanner, para utilizar comandos de entrada
 
-public class java; //O nome do arquivo deve ser java.java
+public class java { //O nome do arquivo deve ser java.java
 
-public static void main(String[] args) {
-    
-    //Comando de sa√≠da
-    System.out.print("Hello World"); //o cursor n√£o passa para a linha seguinte
-    System.out.println("Estou aprendendo Java!");//o cursor passa para a linha seguinte
-
-    //Declara√ß√£o de vari√°veis
-    int idade;
-    float salario = 1500; //declara√ß√£o com atribui√ß√£o de valor
-    double nota, porcentagem; //permite m√∫ltiplas declara√ß√µes
-
-    //Criar um objeto a partir da classe Scanner
-    Scanner sc = new Scanner(System.in);
-
-    //Inicializar a vari√°vel declarada
-    idade=sc.nextInt();
-
-    //Declarar e inicializar uma vari√°vel
-    int ano = sc.nextInt();
-
-    //Atribui√ß√£o simples de valor
-    int x,y;
-    x=10+26; //a soma dos valores √© atribu√≠da a x
-    y=x; // y recebe o mesmo valor que x
-
-    //Atribui√ß√£o na declara√ß√£o
-    int cont=0;
-
-    //Atribui√ß√£o m√∫ltipla
-    int a, b, c;
-    a = b = c = 10+26;
-    
-    //Convers√£o de tipos em atribui√ß√µes
-    int numero = (char) 'I';
-
-    //Operadores aritm√©ticos
-    int x=5, y=3, z;
-    
-    z=x+y; //z=8
-    z=x-y; //z=2
-    z=x*y; //z=15
-    z=x/y; //z=1, porque foi declarado como inteiro. O resultado √© 1,666666666666667
-    z=x%y; //z=2 resto de divis√£o
-
-    //Comandos de atribui√ß√£o
-    double salario, aumento;
-    salario+=aumento; //salario = salario+aumento
-}
+	public static void main(String[] args) {
+	    char exclamacao = '!';
+	    //Comando de saÌda
+	    System.out.print("Hello World! "); //o cursor n„o passa para a linha seguinte
+	    System.out.print("Estou aprendendo Java");//o cursor passa para a linha seguinte
+	    System.out.println(exclamacao);//imprimir apenas o valor da vari·vel
+	    
+	
+	    //DeclaraÁ„o de vari·veis
+	    int idade;
+	    float salario = 1500; //declaraÁ„o com atribuiÁ„o de valor
+	    double nota, porcentagem; //permite m˙ltiplas declaraÁıes
+	
+	    //Criar um objeto a partir da classe Scanner
+	    Scanner sc = new Scanner(System.in);
+	
+	    //Inicializar a vari·vel declarada
+	    idade=sc.nextInt();
+	
+	    //Declarar e inicializar uma vari·vel
+	    int ano = sc.nextInt();
+	
+	    //AtribuiÁ„o simples de valor
+	    int x,y;
+	    x=10+26; //a soma dos valores È atribuÌda a x
+	    y=x; // y recebe o mesmo valor que x
+	
+	    //AtribuiÁ„o na declaraÁ„o
+	    int cont=0;
+	
+	    //AtribuiÁ„o m˙ltipla
+	    int a, b, c;
+	    a = b = c = 10+26;
+	    
+	    //Convers„o de tipos em atribuiÁıes
+	    int numero = (char) 'I';
+	
+	    //Operadores aritmÈticos
+	    int f=5, g=3, e;
+	    
+	    e=f+g; //z=8
+	    e=f-g; //z=2
+	    e=f*g; //z=15
+	    e=f/g; //z=1, porque foi declarado como inteiro. O resultado È 1,666666666666667
+	    e=f%g; //z=2 resto de divis„o
+	
+	    //Comandos de atribuiÁ„o
+	    double pagamento, aumento;
+	    System.out.println("Quanto vocÍ recebe atualmente?");
+	    pagamento=sc.nextDouble();
+	    System.out.println("Quanto foi o seu aumento?");
+	    aumento=sc.nextDouble();
+	    pagamento+=aumento; //salario = salario+aumento
+	}
+} 
