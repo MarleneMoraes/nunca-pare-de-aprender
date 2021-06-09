@@ -62,6 +62,12 @@ Outras fontes sobre o assunto: [.NET (A Plataforma Completa de Desenvolvimento d
 
 O .NET trabalha com a linguagem C# por padrão e tudo nele é orientada a objetos, até mesmo os dados mais simples.
 
+- Estruturas de Dados:
+
+  - *Language-Integrated Query* (LINQ): sintaxe para consultas em .NET, compatível com fontes de dados diferentes. 
+
+    **Métodos populares:** Any, Single, First, Where, Select, SelectMany, OrderBy, OrderByDescending, Sum, Min, Max, Count.
+
 
 
 ## Command-Line Interface (CLI)
@@ -111,3 +117,4 @@ O .NET trabalha com a linguagem C# por padrão e tudo nele é orientada a objeto
 
 5. 
 
+- 
