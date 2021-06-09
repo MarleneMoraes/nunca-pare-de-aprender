@@ -1,9 +1,15 @@
 # Banco de Dados
 <small>Criador: Edgar Frank Codd <br/>Ano: 1970 </small>
 
-Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u>persistentes</u> e <u>relacionados</u>, usados pelos sistemas de aplicação de uma determinada empresa. Tem por objetivo atender a uma <u>comunidade de usuários</u>; Coleções organizadas de dados que se relacionam de forma a criar algum sentido (informação) e dar mais eficiência durante uma pesquisa ou estudo científico.
+Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u>persistentes</u> e <u>relacionados</u>, usados pelos sistemas de aplicação de uma determinada empresa; Coleções organizadas de dados que se relacionam de forma a criar algum sentido (informação) e dar mais eficiência durante uma pesquisa ou estudo científico. 
 
-**Objetivo:** registrar instâncias separadas de dados com características em comum (não valores).
+**Objetivo:**  atender a uma <u>comunidade de usuários</u> com a reunião de informações de maneira organizada, consistente, protegida e acessível em tempo hábil; registrar instâncias separadas de dados com características em comum (não valores).
+
+- Características
+  - Armazenamento, busca e tratamento em qualquer área de atividade;
+  - Tamanhos e níveis de complexidade;
+  - Aplicações construídas com algum propósito;
+  - Aspecto do mundo real representado pelo mini-mundo.
 
 - História
 
@@ -19,7 +25,7 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
     - Criação da tecnologia de Banco de Dados
 
       - Base de Dados
-      - Sistema Gerenciador (SGBD ou DBMS, em inglês): software que administra o Banco de Dados, e incorpora as funções de definição, recuperação e alteração de dados em um banco de dados
+      - Sistema Gerenciador (SGBD ou DBMS, em inglês): software que administra o Banco de Dados, onde armazena, organiza, protege, atualiza, acrescenta, exclui e acessa dados sempre que necessário para corresponder à demanda que a aplicação exige. 
       - Linguagem de Exploração → linguagem de acesso ao dado
       - Programas adicionais
 
@@ -40,32 +46,6 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
     - Desenvolvido por Edgar Frank Codd, membro do laboratório de pesquisa da IBM.
 
   - Década de 1980: primeira versão padronizada da linguagem SQL. 
-
-- Características
-
-  - Armazenamento, busca e tratamento em qualquer área de atividade;
-  - Tamanhos e níveis de complexidade;
-  - Aplicações construídas com algum propósito;
-  - Aspecto do mundo real representado pelo mini-mundo.
-
-- Linguagem de exploração/ declarativa
-
-  *Structured English Query Language* (SEQUEL) → *Structured Query Language* (SQL)
-
-  - SQL: linguagem declarativa padrão de simples e fácil uso para Banco de Dados Relacional.
-
-    :warning: SQL foi criada para ser uma linguagem única, mas empresas começaram a customizar e criar incrementos, o que desregularizou a linguagem. A ANSI e a ISO foram responsáveis pela re-padronização da implementação da linguagem. Atualmente, os Bancos de Dados seguem criteriosamente este padrão.
-
-  - NoSQL: termo utilizado para 
-
--  Tipos de Bancos de Dados
-
-  | Pagas e empresariais    | Soluções gratuitas                        |
-  | ----------------------- | ----------------------------------------- |
-  | Oracle Database         | My SQL (pertence a Oracle)                |
-  | IBM                     | MariaDB (inicialmente, foi fork do MySQL) |
-  | dBase (não existe mais) | Firebird                                  |
-  | Microsoft SQL Server    | Postgree SQL                              |
 
   
 
@@ -95,4 +75,56 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
   2. Projeto Conceitual (Modelo de Entidade-Relacionamento — MER) → descrever a estrutura de informação sem se preocupar em qual SGBD a base de dados estará.
   3. Projeto Lógico (Modelo Relacional, orientado a objetos, etc.) → esquema lógico
   4. Projeto Físico (Implementação do Banco de Dados) → visão macro do Banco de Dados
+
+`NULL` é a ausência de valor
+
+- Linguagem de exploração/ declarativa
+
+  *Structured English Query Language* (SEQUEL) → *Structured Query Language* (SQL)
+
+  SQL: linguagem declarativa padrão de simples e fácil uso para Banco de Dados Relacional, por isso, é um grande padrão dos Bancos de Dados. 
+
+  :warning: SQL foi criada para ser uma linguagem única, mas empresas começaram a customizar e criar incrementos, o que desregularizou a linguagem. A ANSI e a ISO foram responsáveis pela re-padronização da implementação da linguagem. Atualmente, os Bancos de Dados seguem criteriosamente este padrão.
+
+- Modelo de Banco de Dados
+
+  - Bancos de Dados Relacional: comumente chamado de Banco de Dados SQL, modela os dados de uma forma que eles sejam percebidos pelo usuário como tabelas.  Essas tabelas podem se relacionar, a fim de garantir a integridade dos dados que irão receber para que nenhum dado seja excluído sem antes desvincular o relacionamento. 
+
+    - Tabelas: conjunto de dados formadas por colunas (campos) e linhas (registros).
+
+      - Colunas: caracterizam os tipos de dados que deverão constar na tabela (numéricos, strings, imagens, datas, horários, coordenadas)
+
+      - Linhas: combinações de valores com os campos geram registros, que podem ser idênticos. Para diferenciá-los, há uma identificação chamada chave primária.
+
+      - *Primary Key* (Chave Primária): identificador único da tabela e são incrementadas automaticamente pelo Banco de Dados.
+
+        É importante que as tabelas tenham uma chave primária para identificação dos registros, pois pode haver dados idênticos (como o nome de uma pessoa ser igual a outra). A Chave Primária também permite que tabelas se relacionem: a chave primária de uma tabela é a chave estrangeira de outra e vice-versa.  
+
+      - *Foreign Key* (Chave Estrangeira): referência em uma tabela a uma chave primária de outra tabela.
+
+    - Tipos de relacionamentos:
+
+      - 1-1 (um para um): registro em uma tabela que está relacionado apenas a um registro de outra tabela.
+      - 1-N (um para vários ou um para muitos): registro em uma tabela associado a um ou mais registros de outra tabela.
+      - N-N (vários para vários ou muitos para muitos): vários registros em uma tabela associado a vários registros de outra tabela.
+
+  - Banco de Dados Não-Relacional: comumente chamado de Banco de Dados No-SQL, permitem que os dados relacionados sejam feitos em uma única estrutura de dados, pois não utiliza a estrutura de tabelas.
+    - Vantagens de uso:
+      - Armazenamento de grandes volumes de dados sem estrutura definida; 
+      - Não requer nível de preparação necessário como os SQL; 
+      - Avanço e barateamento em serviços em nuvem. 
+    - Tipos de No-SQL:
+      - Banco de Documentos
+      - Chave-Valor 
+
+- *Softwares* de Bancos de Dados
+
+  | Pagas e empresariais    | Soluções gratuitas                        |
+  | ----------------------- | ----------------------------------------- |
+  | Oracle Database         | My SQL (pertence a Oracle)                |
+  | IBM                     | MariaDB (inicialmente, foi fork do MySQL) |
+  | dBase (não existe mais) | Firebird                                  |
+  | Microsoft SQL Server    | Postgree SQ                               |
+
+  
 

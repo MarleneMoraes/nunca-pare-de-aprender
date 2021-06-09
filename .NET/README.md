@@ -2,15 +2,13 @@
 
 <small>Criador: <a href="https://github.com/microsoft">Microsoft</a> <br/>Ano: 2000 (.NET framework), 2016 (.NET Core), 2019 (.NET 5)</small>
 
-Infraestrutura para o desenvolvimento de software criada pela Microsoft e é desenvolvida para e executa em implementações da plataforma gratuita, multi-plataforma e de código aberto .NET, desenvolvida e tem suporte às linguagens C#, F# e VB (Visual Basic).
+Infraestrutura para o desenvolvimento de software criada pela Microsoft e é desenvolvida para e executa em implementações da plataforma gratuita, multi-plataforma e de código aberto .NET, desenvolvida e tem suporte às linguagens C#, F# e VB (Visual Basic). Fornece uma ampla variedade de funcionalidades úteis, como entrada e saída de arquivos, manipulação de cadeias de caracteres, análise XML, entre outros.
 
 - .NET Core
 
 - .NET Framework
 - Mono
 - Universal Windows Plataform (UWP)
-
-
 
 Sucessor do ASP (ferramenta web com Java, inicialmente chamada de ASP+, depois ASP Next e por fim ASPX), ASP.NET é uma extensão dos arquivos quando trabalha com a plataforma Web Forms (a frente Web do .NET *framework*), voltada a desenvolvimento de aplicações Web. 
 

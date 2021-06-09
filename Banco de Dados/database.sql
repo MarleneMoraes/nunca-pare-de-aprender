@@ -1,12 +1,22 @@
 /* Criando tabela */
-CREATE TABLE novaTabela (
-    /*Toda tabela deverá ter uma chave primária */
+CREATE TABLE novaTabela 
+   /*
+	Tipos de variáveis:
+	INT 
+	BIGINT
+	VARCHAR
+	CHAR
+   */
+   
+   /*Toda tabela deverá ter uma chave primária */
 	id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
 
     /* Outros dados que podem ser alterados*/
     nome VARCHAR 20 NOT NULL,
     nascimento DATE
-)
+
+	/* Para utilizar outro banco de dados */
+	USE master
 
 /* Para inserir dados na tabela */
 INSERT INTO novaTabela (nome, nascimento) VALUES ('Marlene', '1994-10-11')
