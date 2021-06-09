@@ -49,3 +49,7 @@ bool myBool = true;
 
 Material de @jonesroberto in [Exemplo de tipos de dados em  C#](https://gist.github.com/jonesroberto/76c5791bfea24d9526089dec87fe5e32#file-example-cs)
 
+- Estruturas de Dados:
+  - Condicionais
+  - Repetição
+  - Listas: estrutura de dados tipada, que permite armazenar múltiplos elementos e acesso por índice. Além disso, possui métodos que permitem realizar manipulações e pesquisas em seus dados. 
