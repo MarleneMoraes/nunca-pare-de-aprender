@@ -11,12 +11,12 @@ Técnicas diferentes de montar uma estrutura e execução de um código, o que a
 
 - Tipos:
 
-  - Programação orientada a objetos (POO): podem conter dados na forma de campos (atributos) e códigos, procedimentos (métodos). Um procedimento de um objeto pode acessar e geralmente modificar os atributos associados, podendo ser visto como uma "máquina independente". Você pode definir objetos em um mesmo procedimento porém com atributos diferentes.
+  - Programação orientada a objetos (POO): paradigma cujo foco é o conceito de objetos e caracterizam-se na forma de campos (atributos ou propriedades) e códigos, e geralmente possuem procedimentos (métodos ou funções). Um procedimento de um objeto pode acessar e geralmente modificar os atributos associados, podendo ser visto como uma "máquina independente". Você pode definir objetos em um mesmo procedimento porém com atributos diferentes.
     - Os 4 pilares da POO:
-      - Abstração 
-      - Encapsulamento
-      - Herança
-      - Polimorfismo
+      - Abstração: técnica que permite esconder do "cliente" de um código detalhes de implementação interna; os "clientes" do método não precisam saber como ele funciona, mas pode invocá-lo com os parâmetros necessários. 
+      - Encapsulamento: técnica de esconder membros de uma classe do "exterior".
+      - Herança: técnica que permite a reutilização, extensão e modificação de características e comportamentos de outras classes. A classe que é herdada é comumente chamada de base ou pai, e a que herda, derivada ou filha. Ela é afetada pelo encapsulamentos que estejam aplicados à classe base. 
+      - Polimorfismo: técnica que permite que objetos de classes derivadas tenham comportamento diferente da classe base. Se expressa através de palavras-chave virtual (define quais comportamentos poderão ser alterados na classe derivada) e override (responsável pela implementação do método virtual na classe derivada).
   - Programação Estruturada (PE): interpretação linha a linha em pequenos trechos de código, sem ordem específica.
     - Tipos de estruturas básicas: 
       - Sequência: execução de cima a baixo, linha a linha em sequência.

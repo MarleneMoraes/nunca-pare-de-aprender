@@ -76,7 +76,7 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
   3. Projeto Lógico (Modelo Relacional, orientado a objetos, etc.) → esquema lógico
   4. Projeto Físico (Implementação do Banco de Dados) → visão macro do Banco de Dados
 
-`NULL` é a ausência de valor
+
 
 - Linguagem de exploração/ declarativa
 
@@ -88,7 +88,7 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
 
 - Modelo de Banco de Dados
 
-  - Bancos de Dados Relacional: comumente chamado de Banco de Dados SQL, modela os dados de uma forma que eles sejam percebidos pelo usuário como tabelas.  Essas tabelas podem se relacionar, a fim de garantir a integridade dos dados que irão receber para que nenhum dado seja excluído sem antes desvincular o relacionamento. 
+  - **Bancos de Dados Relacional:** comumente chamado de Banco de Dados SQL, modela os dados de uma forma que eles sejam percebidos pelo usuário como tabelas.  Essas tabelas podem se relacionar, a fim de garantir a integridade dos dados que irão receber para que nenhum dado seja excluído sem antes desvincular o relacionamento. 
 
     - Tabelas: conjunto de dados formadas por colunas (campos) e linhas (registros).
 
@@ -96,11 +96,11 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
 
       - Linhas: combinações de valores com os campos geram registros, que podem ser idênticos. Para diferenciá-los, há uma identificação chamada chave primária.
 
-      - *Primary Key* (Chave Primária): identificador único da tabela e são incrementadas automaticamente pelo Banco de Dados.
+      - *Primary Key* (Chave Primária): identificador único do registro e são incrementadas automaticamente pelo Banco de Dados, podendo ser única ou composta. Ela melhora a performance na busca porque indexa todos os registros e a retorna de maneira mais rápida. 
 
         É importante que as tabelas tenham uma chave primária para identificação dos registros, pois pode haver dados idênticos (como o nome de uma pessoa ser igual a outra). A Chave Primária também permite que tabelas se relacionem: a chave primária de uma tabela é a chave estrangeira de outra e vice-versa.  
 
-      - *Foreign Key* (Chave Estrangeira): referência em uma tabela a uma chave primária de outra tabela.
+      - *Foreign Key* (Chave Estrangeira): referência de uma tabela para outra tabela. Uma chave estrangeira sempre será a cópia de uma chave primária, de mesmo tipo e quantidade, pois a chave estrangeira referencia uma chave primária.
 
     - Tipos de relacionamentos:
 
@@ -108,7 +108,8 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
       - 1-N (um para vários ou um para muitos): registro em uma tabela associado a um ou mais registros de outra tabela.
       - N-N (vários para vários ou muitos para muitos): vários registros em uma tabela associado a vários registros de outra tabela.
 
-  - Banco de Dados Não-Relacional: comumente chamado de Banco de Dados No-SQL, permitem que os dados relacionados sejam feitos em uma única estrutura de dados, pois não utiliza a estrutura de tabelas.
+  - **Banco de Dados Não-Relacional:** comumente chamado de Banco de Dados No-SQL, permitem que os dados relacionados sejam feitos em uma única estrutura de dados, pois não utiliza a estrutura de tabelas.
+    
     - Vantagens de uso:
       - Armazenamento de grandes volumes de dados sem estrutura definida; 
       - Não requer nível de preparação necessário como os SQL; 
@@ -116,6 +117,7 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
     - Tipos de No-SQL:
       - Banco de Documentos
       - Chave-Valor 
+        - `NULL` é a ausência de valor
 
 - *Softwares* de Bancos de Dados
 
@@ -124,7 +126,38 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
   | Oracle Database         | My SQL (pertence a Oracle)                |
   | IBM                     | MariaDB (inicialmente, foi fork do MySQL) |
   | dBase (não existe mais) | Firebird                                  |
-  | Microsoft SQL Server    | Postgree SQ                               |
+  | Microsoft SQL Server    | Postgree SQL                              |
 
-  
+- Fases da Normalização de Dados: 
+
+  - 1ª Fase: Não deve haver um conjunto de colunas repetido ou conjunto de informações com apenas uma propriedade (CEP, Endereço, Complemento deve ser um dado em cada coluna).
+  - 2ª Fase: Não deve haver informações constantes duplicadas que dependam da chave primária. Importante identificar quando ela varia conforme o tempo, como um preço de um produto, pois o registro deve ser conforme o período de compra com determinado preço e o preço atual na tabela de descrição do produto (que pode modificar conforme o tempo).
+  - 3ª Fase: Restringir dados, criando uma tabela em formato de glossário, com um número como chave primária e o significado de cada código, como o status do pedido.
+
+- Comandos SQL
+
+  - `CREATE TABLE [nome da tabela]`: Cria uma nova tabela;
+
+  - `INSERT INTO [nome da tabela] ([coluna], [coluna]) VALUES (['[valor]', '[valor]'])`: Adiciona os valores indicados respectivamente na coluna declarada.
+
+  - `ALTER TABLE [nome da tabela]`: Alteração na  tabela
+
+    - `ALTER TABLE [nome da tabela] ADD [coluna] [tipo de dado] ([quantidade de caracteres]) AFTER [coluna existente]`: Adiciona na tabela uma coluna, declarando o tipo e quantidade dos dados e sua localização na tabela (no caso, após a coluna existente).
+
+  - `SELECT [coluna] FROM [nome da tabela]`: seleciona um dado;
+
+    - `SELECT ISNULL, GETDATE (coluna) FROM [tabela]`: se essa coluna for nula, retornar no local, GETDATE
+
+    - Estrutura condicional:
+
+      ```sql
+      SELECT * ,
+      	CASE WHEN [coluna] = '[dado]' THEN '[dado que substituirá]'
+      	CASE WHEN [coluna] = '[dado]' THEN '[dado que substituirá]'
+      	ELSE 'dado que não cabe aos anteriores'
+      	END
+      FROM [tabela]
+      ```
+
+    - `SELECT *, CONVERT ([tipo de dado desejado] ([tamanho dele, ou o seu máximo]), [coluna]) FROM [tabela]`: conversão para um tipo desejado, podendo declarar seu tamanho ou não em uma determinada coluna na tabela indicada. 
 
