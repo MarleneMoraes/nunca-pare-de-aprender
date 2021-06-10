@@ -83,3 +83,19 @@ static void Main(string[] args)
         Console.WriteLine(numero);
     }
 }
+
+//Listas 
+var notas = new List<int> { 10, 1, 4, 8, 2, 9 }; //comportamento semelhante aos arrays
+
+notas.Add(5); //adicionar nota 5
+notas.Remove; //remove de acordo com a condição
+var anyNumeroMaiorQue3 = notas.Any(n => n > 3); //Função lambda: representação dos valores da Lista em uma condição. 
+var firstNota = notas.First (n => n == 2); //primeira nota que seja igual a 2
+var firstNota = notas.FirstOrDefault(n => n == 2); //o primeiro valor em uma condição; se não encontrar o valor, lançará uma excessão (valor nulo)
+var singleNota9 = notas.Single(n => n == 9); //qualquer valor em uma condição; o single dará excessão se tiver 0 ou mais de um
+var ordered = notas.OrderBy(n => n); //ordenação pelo próprio valor
+var pow2 = notas.Select(notas => Math.Pow(n, 2)); //valor das notas ao quadrado
+var max = notas.Max(); //nota máxima
+var min = notas.Min(); //nota mínimo 
+var sum = notas.Sum(); //soma das notas
+var average = notas.Average(); //média das notas

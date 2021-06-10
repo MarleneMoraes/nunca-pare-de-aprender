@@ -53,3 +53,20 @@ Material de @jonesroberto in [Exemplo de tipos de dados em  C#](https://gist.git
   - Condicionais
   - Repetição
   - Listas: estrutura de dados tipada, que permite armazenar múltiplos elementos e acesso por índice. Além disso, possui métodos que permitem realizar manipulações e pesquisas em seus dados. 
+- Conceitos importantes em uma Classe: instância, propriedade, método e construtor.
+  - Tipos de Classes: 
+    - *abstract*: não permite que você crie uma instância sobre ela, mas permite que você crie bases para outras classes, tipo herança;
+    - *static*: utiliza uma instância única na memória, acessar propriedade diretamente;
+    - *partial*: quebrar  a classe em diferentes arquivos ou lugares para diferentes comportamentos;
+    - *sealed*: não poderá ser herdada. 
+  - Orientação a objetos:
+    - Abstração: métodos
+    - Encapsulamento: utilização de modificadores de acesso (
+      - Modificadores de acesso:
+        - *public*: o acesso é público;
+        - *protected*: o acesso está limitado para própria classe ou para classes derivadas
+        - *internal*: o acesso está limitado ao *assembly* atual
+        - *protected internal*
+        - *private*: o acesso está limitado a própria classe
+        - *private protected*
+
