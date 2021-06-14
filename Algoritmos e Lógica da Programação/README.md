@@ -1,5 +1,43 @@
 # Algoritmos e Lógica da Programação
-[trecho em andamento]
+[trecho em andamento] 
+
+algoritmo,automação e programa de computador
+
+algoritmo sequência finita de instruções para se resolver um problema.
+
+obs aplica-se a diversas áreas de conhecimento 
+
+exemplo: lavar roupa suja
+
+algoritmo
+
+1°colocar a roupa em um recipiente
+
+2°colocar um pouco de sabão e amaciante
+
+3°encher de água
+
+4°mexer tudo até dissolver todo o sabão
+
+5°deixar de molho por 20 minutos
+
+6°esfregar a roupa
+
+7°enxaguar
+
+8°torcer
+
+
+
+automação: consiste em utilizar máquina para executar o procedimento de forma automática ou semiautomática
+
+computador
+
+-hardware: parte física (a máquina em si)
+
+-software parte lógica (programas)
+
+exemplos: sistemas operacionais (windows,linux,IOS)aplicativos,jogos,utilitários (antivírus,compactador de arquivos)
 
 
 
