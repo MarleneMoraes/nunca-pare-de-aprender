@@ -23,7 +23,7 @@ Será para uso pessoal, mas você pode pegar qualquer dica por aqui que ficaremo
 
 > ### Equipe
 
-| <img src="https://unavatar.now.sh/github/gabcarvalhaes" alt="Gabriel" width="200px" /> | <img src="https://unavatar.now.sh/github/marlenemoraes" alt="Marlene" width="200px"/> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Gabriel Carvalhaes <br/>(@gabcarvalhaes)                     | Marlene Moraes<br/> (@MarleneMoraes)                         |
+| <img src="https://unavatar.now.sh/github/gabcarvalhaes" alt="Gabriel" width="200px" /> | <img src="https://unavatar.now.sh/github/marlenemoraes" alt="Marlene" width="200px"/> | <img src="https://unavatar.now.sh/github/Matheus21Oliveira" alt="Matheus" width="200px" /> |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Gabriel Carvalhaes <br/>(@gabcarvalhaes)                     | Marlene Moraes<br/> (@MarleneMoraes)                         | Matheus Oliveira<br/> (@Matheus21Oliveira)                   |
 
