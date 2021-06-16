@@ -39,9 +39,85 @@ computador
 
 exemplos: sistemas operacionais (windows,linux,IOS)aplicativos,jogos,utilitários (antivírus,compactador de arquivos)
 
+programa ~ algoritmo . programas sao algoritmos executados pelo computador (em linhas gerais)
+
+OBS: algoritmos computacionais sao passos a serem seguidos por um módulo processador e seus respectivos usuários que, quando executados da forma correta, conseguem realizar determinada tarefa.
+
+lógica de programação  linguagem de programação - sistema completo
 
 
 
+programa de computador
+
+°componentes: linguagens de programação; IDE; compilador; e gerador de código ou máquina virtual.
+
+°linguagens de programação: regras, léxicas e sintáticas, para se escrever o programa.
+
+OBS: léxica: correção de palavras isoladas
+
+síntatica: correção de sentenças
+
+exemplos: c, c++,c#,pascal,java,phyton,ruby,javascript.
+
+IDE: ambiente de desenvolvimento integrado
+
+conjunto de softwares utilizados para a contrução de programas.
+
+exemplos:
+
+c/c++ . code blocks;
+
+java: eclipse, netbeans
+
+c#: microsoft visual studio
+
+°funcionalidades 
+
+-edição de código fonte: endentação, auto completar, destaque de palavras.
+
+-depuração e testes 
+
+-contrução do produto final(build)
+
+-sugestão de modelos(templates)
+
+-auxiliar em várias tarefas do seu projeto
+
+
+
+compilação e interpretação código fonte e objeto máquina virtual
+
+°código fonte: aquele escrito pelo programador em linguagem de programação.
+
+°compilação (c, c++)
+
+código fonte - código objeto - código executável - execução 
+
+°interpretação (php, javascript, python, ruby)
+
+código fonte - execução
+
+°abordagem híbrida(java - JVM,c# - microsoft .NETframework)
+
+código fonte - *bytecode* - execução 
+
+
+
+vantagens
+
+°compilação
+
+-velocidade do programa
+
+-auxílio do compilador antes da execução
+
+°interpretação
+
+-flexibilidade de manutenção do aplicativo em produção 
+
+-expressividade da linguagem
+
+-código fonte não precisa ser recompilado para rodas em plataformas diferentes
 
 ## Paradigmas de Programação
 
