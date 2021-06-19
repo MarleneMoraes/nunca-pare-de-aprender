@@ -1,6 +1,4 @@
 # Algoritmos e Lógica da Programação
-[trecho em andamento] 
-
 algoritmo,automação e programa de computador
 
 algoritmo sequência finita de instruções para se resolver um problema.
@@ -312,6 +310,44 @@ outro caso
 bloco D
 
 FimEscolha
+
+
+
+estrutura de dados
+
+estrutura organizada de dados na memória de um dispositivo de armazenamento, para que os dados sejam utilizados de maneira correta.
+
+
+
+vetores
+
+variável que armazena várias variáveis do mesmo tipo
+
+inteiro numeros[ ] = {num1, num2, num3, num4}
+
+para (inteiro posicao = 0, posicao <= 3: posicao++){escreva(numeros [posicao], " ");
+
+}
+
+
+
+matrizes
+
+vetor de vetores, que possui um ou mais dimensões
+
+constante inteiro TAMANHO = 5
+
+inteiro matriz [TAMANHO] [TAMANHO]
+
+para(inteiro linha = 0 ; linha <TAMANHO; linha++){ para (inteiro coluna = 0; coluna <TAMANHO; coluna++)
+
+{matriz [linha] [coluna] = ...
+
+escreva ("[" matriz[linha] [coluna], "]")
+
+}
+
+} escreva ih
 
 ## Paradigmas de Programação
 
