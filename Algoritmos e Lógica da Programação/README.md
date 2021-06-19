@@ -119,6 +119,200 @@ vantagens
 
 -código fonte não precisa ser recompilado para rodas em plataformas diferentes
 
+comandos de saída(portugol)
+
+escreva ("texto")
+
+escreva l ("texto")
+
+variáveis
+
+var
+
+identificador: tipo
+
+identificadores:
+
+1.deve começar com uma letra
+
+2.os próximos podem ser letras ou números
+
+3.não pode utilizar nenhum símbolo, exceto _.
+
+4.não pode conter espaços em branco
+
+5.não pode conter letras acentuadas
+
+6.não pode ser uma palavra reservada
+
+
+
+tipos primitivos no potugol:
+
+°inteiro
+
+°real
+
+°caractere
+
+°lógico
+
+atribuições( recebe o valor)
+
+ex: msg ← "olá, mundo"
+
+°operadores aritméticos
+
+`+` adiçao
+
+`-` subtraçao
+
+`*` multiplicação
+
+`/` divisão
+
+`\`divisão inteira 
+
+`^`exponenciação
+
+`%`modulo
+
+
+
+ordem de precedência
+
+( ) parênteses
+
+^ exponenciação
+
+`* /`multiplicação, divisão
+
+`+ - `adição, subtração
+
+
+
+funções aritméticas
+
+abs valor absoluto
+
+exp exponênciação
+
+int valor inteiro
+
+raizQ raiz quadrada
+
+pi retorna π
+
+sen seno(rad)
+
+cos cos(rad)
+
+tan tan(rad)
+
+graup rad grau em rad
+
+
+
+operadores relacionais
+
+`>`maior que
+
+`<`menos que
+
+`>=`maior ou igual a
+
+`<=`menor ou igual a
+
+= igual a
+
+`<>`diferente de
+
+
+
+operadores lógicos 
+
+|  p   |  q   | peq  |
+| :--: | :--: | :--: |
+|  v   |  v   |  v   |
+|  v   |  f   |  f   |
+|  f   |  v   |  f   |
+|  f   |  f   |  f   |
+
+|  p   |  q   | pOUq |
+| :--: | :--: | :--: |
+|  v   |  v   |  v   |
+|  v   |  f   |  v   |
+|  f   |  v   |  v   |
+|  f   |  f   |  f   |
+
+
+
+|  p   | nao p |
+| :--: | :---: |
+|  v   |   f   |
+
+estruturas condicionais
+
+-simples:
+
+se(expressão)então
+
+FimSe
+
+-compostos:
+
+se(expressão) então
+
+bloco A
+
+senao
+
+bloco B
+
+FimSe
+
+-compostas aninhadas 
+
+se(situação 1)entao
+
+bloco A
+
+senao
+
+se (situação 2)então
+
+bloco B
+
+senao
+
+bloco C
+
+FimSe
+
+FimSe
+
+-escolha caso
+
+escolha(varìavel)
+
+caso valor
+
+bloco A
+
+caso valor
+
+bloco B
+
+caso valor
+
+bloco C
+
+outro caso
+
+bloco D
+
+FimEscolha
+
 ## Paradigmas de Programação
 
 Técnicas diferentes de montar uma estrutura e execução de um código, o que apresenta a forma de pensar e visão do programador em relação a estrutura e execução do programa. 
