@@ -1,353 +1,349 @@
 # Algoritmos e Lógica da Programação
-algoritmo,automação e programa de computador
+- Algoritmo, automação e programa de computador
+  - Algoritmo: sequência finita de instruções para se resolver um problema.
 
-algoritmo sequência finita de instruções para se resolver um problema.
+    **OBS:** aplica-se a diversas áreas de conhecimento. 
 
-obs aplica-se a diversas áreas de conhecimento 
+    Exemplo: lavar roupa suja 
 
-exemplo: lavar roupa suja
+    ```
+    Algoritmo
+    
+    	1° Colocar a roupa em um recipiente
+    
+        2° Colocar um pouco de sabão e amaciante
+    
+        3° Encher de água
+    
+        4° Mexer tudo até dissolver todo o sabão
+    
+        5° Deixar de molho por 20 minutos
+    
+        6° Esfregar a roupa
+    
+        7° Enxaguar
+    
+        8° Torcer
+    ```
 
-algoritmo
+    
 
-1°colocar a roupa em um recipiente
+  - Automação: consiste em utilizar máquina para executar o procedimento de forma automática ou semiautomática.
 
-2°colocar um pouco de sabão e amaciante
+    
 
-3°encher de água
+  - Programa de computador
 
-4°mexer tudo até dissolver todo o sabão
+    - Hardware: parte física (a máquina em si)
 
-5°deixar de molho por 20 minutos
+    - Software: parte lógica (programas)
 
-6°esfregar a roupa
+      Exemplos: Sistemas Operacionais (Windows, Linux, IOS); Aplicativos, Jogos, Utilitários (Antivírus, Compactador de arquivos)
 
-7°enxaguar
+    - Componentes: linguagens de programação; IDE; compilador; e gerador de código ou máquina virtual.
 
-8°torcer
+      - Linguagens de programação: regras, léxicas e sintáticas, para se escrever o programa. *Exemplos:* C, C++, [C#](https://github.com/MarleneMoraes/nunca-pare-de-aprender/tree/main/C%23) , Pascal, [Java](https://github.com/MarleneMoraes/nunca-pare-de-aprender/tree/main/Java), [Python](https://github.com/MarleneMoraes/nunca-pare-de-aprender/tree/main/Python), Ruby, Javascript.
 
+        **OBS:** Léxica: correção de palavras isoladas
 
+        ​		  Sintática: correção de sentenças
 
-automação: consiste em utilizar máquina para executar o procedimento de forma automática ou semiautomática
+      - IDE: ambiente de desenvolvimento integrado; conjunto de softwares utilizados para a construção de programas.
 
-computador
+        *Exemplos:*
 
--hardware: parte física (a máquina em si)
+        C/C++: Code Blocks;
 
--software parte lógica (programas)
+        Java: Eclipse, Netbeans;
 
-exemplos: sistemas operacionais (windows,linux,IOS)aplicativos,jogos,utilitários (antivírus,compactador de arquivos)
+        C#: Microsoft Visual Studio.
 
-programa ~ algoritmo . programas sao algoritmos executados pelo computador (em linhas gerais)
+        - Funcionalidades 
 
-OBS: algoritmos computacionais sao passos a serem seguidos por um módulo processador e seus respectivos usuários que, quando executados da forma correta, conseguem realizar determinada tarefa.
+          - Edição de código fonte: endentação, auto completar, destaque de palavras.
+          - Depuração e testes 
+          - Construção do produto final (*build*)
+          - Sugestão de modelos (*templates*)
+          - Auxiliar em várias tarefas do seu projeto
 
-lógica de programação  linguagem de programação - sistema completo
+        - Compilação e interpretação código fonte e objeto máquina virtual
 
+          - Código Fonte: aquele escrito pelo programador em linguagem de programação.
 
+          - Compilação (C, C++)
 
-programa de computador
+            `código fonte → código objeto → código executável → execução`
 
-°componentes: linguagens de programação; IDE; compilador; e gerador de código ou máquina virtual.
+          - Interpretação (php, Javascript, Python, Ruby)
 
-°linguagens de programação: regras, léxicas e sintáticas, para se escrever o programa.
+            `código fonte → execução`
 
-OBS: léxica: correção de palavras isoladas
+          - Abordagem híbrida (Java - JVM, C# - [Microsoft .NET *framework*](https://github.com/MarleneMoraes/nunca-pare-de-aprender/tree/main/.NET))
 
-síntatica: correção de sentenças
+            `código fonte → bytecode → execução`
 
-exemplos: c, c++,c#,pascal,java,phyton,ruby,javascript.
+            
 
-IDE: ambiente de desenvolvimento integrado
+          **Vantagens:**
 
-conjunto de softwares utilizados para a contrução de programas.
+          - Compilação
+            - Velocidade do programa;
+            - Auxílio do compilador antes da execução.
 
-exemplos:
+          - Interpretação
 
-c/c++ . code blocks;
+            - Flexibilidade de manutenção do aplicativo em produção; 
 
-java: eclipse, netbeans
+            - Expressividade da linguagem
 
-c#: microsoft visual studio
+            - Código fonte não precisa ser recompilado para rodas em plataformas diferentes
 
-°funcionalidades 
+              
 
--edição de código fonte: endentação, auto completar, destaque de palavras.
+  - Comandos de Saída (portugol)
 
--depuração e testes 
+    ```
+    Escreva ("texto")
+    
+    Escreval ("texto")
+    ```
 
--contrução do produto final(build)
+    
 
--sugestão de modelos(templates)
+  - Variáveis (var): espaço na memória do computador destinado a um dado que é alterado durante a execução do algoritmo.
 
--auxiliar em várias tarefas do seu projeto
+    
 
+    - Tipos primitivos no potugol:
 
+      - Inteiro
 
-compilação e interpretação código fonte e objeto máquina virtual
+      - Real
 
-°código fonte: aquele escrito pelo programador em linguagem de programação.
+      - Caractere
 
-°compilação (c, c++)
+      - Lógico
 
-código fonte - código objeto - código executável - execução 
+      - Atribuições (recebe o valor)
 
-°interpretação (php, javascript, python, ruby)
+        Exemplo: `msg ← "olá, mundo"`
 
-código fonte - execução
+    ```
+    var
+    nomeDaVariavel: inteiro
+    nomeDaVariavel: real
+    nomeDaVariavel: caractere
+    nomeDaVariavel: logico
+    ```
 
-°abordagem híbrida(java - JVM,c# - microsoft .NETframework)
+    
 
-código fonte - *bytecode* - execução 
+    - Regras dos identificadores (nomes das variáveis):
 
+    1. Deve começar com uma letra
 
+    2. Os próximos podem ser letras ou números
 
-vantagens
+    3. Não pode utilizar nenhum símbolo, exceto *underline* `_` 
 
-°compilação
+    4. Não pode conter espaços em branco
 
--velocidade do programa
+    5. Não pode conter letras acentuadas
 
--auxílio do compilador antes da execução
+    6. Não pode ser uma palavra reservada
 
-°interpretação
+    
 
--flexibilidade de manutenção do aplicativo em produção 
+    :warning: **Programa ≠ Algoritmo**: Programas são algoritmos executados pelo computador (em linhas gerais).
 
--expressividade da linguagem
+    
 
--código fonte não precisa ser recompilado para rodas em plataformas diferentes
+    **OBS:** Algoritmos computacionais são passos a serem seguidos por um módulo processador e seus respectivos usuários que, quando executados da forma correta, conseguem realizar determinada tarefa.
 
-comandos de saída(portugol)
+    Lógica de Programação → Linguagem de Programação → Sistema Completo
 
-escreva ("texto")
+    
 
-escreva l ("texto")
+- Operadores Aritméticos
+  - `+` Adição
+  - `-` Subtração
+  - `*` Multiplicação
+  - `/` Divisão
+  - `\` Divisão inteira 
+  - `^` Exponenciação
+  - `%` Módulo
 
-variáveis
 
-var
 
-identificador: tipo
+- Ordem de Precedência
+  - `( )` Parênteses
 
-identificadores:
+  - `^` Exponenciação
 
-1.deve começar com uma letra
+  - `* /` Multiplicação e Divisão
 
-2.os próximos podem ser letras ou números
+  - `+ - ` Adição e Subtração
 
-3.não pode utilizar nenhum símbolo, exceto _.
+    
 
-4.não pode conter espaços em branco
+- Funções Aritméticas
+  - `abs` Valor absoluto
+  - `exp` Exponenciação
+  - `int` Valor Inteiro
+  - `raizQ` Raiz Quadrada
+  - `pi` retorna π
 
-5.não pode conter letras acentuadas
+  - `sen` Seno em radianos
 
-6.não pode ser uma palavra reservada
+  - `cos` Cosseno em radianos
 
+  - `tan` Tangente em radianos
+  - `grauprad` Grau em radianos
 
 
-tipos primitivos no potugol:
 
-°inteiro
+- Operadores Relacionais
+  - `>` Maior que
+  - `<` Menor que
+  - `>=` Maior ou igual a
+  - `<=` Menor ou igual a
+  - `=` Igual a
+  - `<>` Diferente de
 
-°real
 
-°caractere
 
-°lógico
-
-atribuições( recebe o valor)
-
-ex: msg ← "olá, mundo"
-
-°operadores aritméticos
-
-`+` adiçao
-
-`-` subtraçao
-
-`*` multiplicação
-
-`/` divisão
-
-`\`divisão inteira 
-
-`^`exponenciação
-
-`%`modulo
-
-
-
-ordem de precedência
-
-( ) parênteses
-
-^ exponenciação
-
-`* /`multiplicação, divisão
-
-`+ - `adição, subtração
-
-
-
-funções aritméticas
-
-abs valor absoluto
-
-exp exponênciação
-
-int valor inteiro
-
-raizQ raiz quadrada
-
-pi retorna π
-
-sen seno(rad)
-
-cos cos(rad)
-
-tan tan(rad)
-
-graup rad grau em rad
-
-
-
-operadores relacionais
-
-`>`maior que
-
-`<`menos que
-
-`>=`maior ou igual a
-
-`<=`menor ou igual a
-
-= igual a
-
-`<>`diferente de
-
-
-
-operadores lógicos 
+- Operadores Lógicos 
 
 |  p   |  q   | peq  |
 | :--: | :--: | :--: |
-|  v   |  v   |  v   |
-|  v   |  f   |  f   |
-|  f   |  v   |  f   |
-|  f   |  f   |  f   |
+|  V   |  V   |  V   |
+|  V   |  F   |  F   |
+|  F   |  V   |  F   |
+|  F   |  F   |  F   |
 
 |  p   |  q   | pOUq |
 | :--: | :--: | :--: |
-|  v   |  v   |  v   |
-|  v   |  f   |  v   |
-|  f   |  v   |  v   |
-|  f   |  f   |  f   |
+|  V   |  V   |  V   |
+|  V   |  F   |  V   |
+|  F   |  V   |  V   |
+|  F   |  F   |  F   |
 
 
 
 |  p   | nao p |
 | :--: | :---: |
-|  v   |   f   |
+|  V   |   F   |
 
-estruturas condicionais
+- Estruturas Condicionais
+  - Simples:
 
--simples:
+     ```
+     Se (expressão) entao
+     	Bloco de comandos
+     FimSe
+     ```
 
-se(expressão)então
+    
 
-FimSe
+  - Compostos:
 
--compostos:
+    ```
+    Se (expressão) entao
+    
+    	Bloco de comandos A
+    
+    senao
+    
+    	Bloco de comandos B
+    
+    FimSe
+    ```
 
-se(expressão) então
+    
 
-bloco A
+  - Compostas Aninhadas: 
 
-senao
+    ```
+    Se (Situação 1) entao
+    
+    	Bloco de comandos A
+    
+    senao
+    
+        Se (situação 2) entao
+    
+        	Bloco de comandos B
+    
+        senao
+    
+        	Bloco de comandos C
+    
+        FimSe
+    
+    FimSe
+    ```
 
-bloco B
+    
 
-FimSe
+  - Escolha-caso
 
--compostas aninhadas 
-
-se(situação 1)entao
-
-bloco A
-
-senao
-
-se (situação 2)então
-
-bloco B
-
-senao
-
-bloco C
-
-FimSe
-
-FimSe
-
--escolha caso
-
-escolha(varìavel)
-
-caso valor
-
-bloco A
-
-caso valor
-
-bloco B
-
-caso valor
-
-bloco C
-
-outro caso
-
-bloco D
-
-FimEscolha
-
-
-
-estrutura de dados
-
-estrutura organizada de dados na memória de um dispositivo de armazenamento, para que os dados sejam utilizados de maneira correta.
-
-
-
-vetores
-
-variável que armazena várias variáveis do mesmo tipo
-
-inteiro numeros[ ] = {num1, num2, num3, num4}
-
-para (inteiro posicao = 0, posicao <= 3: posicao++){escreva(numeros [posicao], " ");
-
-}
+    ```
+    Escolha (Variável)
+    
+        Caso valor1
+    
+        	Bloco de comandos A
+    
+        Caso valor2
+    
+        	Bloco de comandos B
+    
+        Caso valor3
+    
+        	Bloco de comandos C
+    
+        Outro Caso
+    
+        	Bloco de comandos D
+    
+    FimEscolha
+    ```
 
 
 
-matrizes
+- Vetores: variável que armazena várias variáveis do mesmo tipo
 
-vetor de vetores, que possui um ou mais dimensões
+  ```
+  inteiro numeros[ ] = { num1, num2, num3, num4 }
+  
+  para (inteiro posicao = 0, posicao <= 3: posicao++){
+  	escreva(numeros [posicao], " ")
+  }
+  ```
 
-constante inteiro TAMANHO = 5
+  
 
-inteiro matriz [TAMANHO] [TAMANHO]
+- Matrizes: vetor de vetores que possui um ou mais dimensões.
 
-para(inteiro linha = 0 ; linha <TAMANHO; linha++){ para (inteiro coluna = 0; coluna <TAMANHO; coluna++)
+  ```
+  constante inteiro TAMANHO = 5
+  
+  inteiro matriz [TAMANHO] [TAMANHO]
+  
+  para (inteiro linha = 0 ; linha < TAMANHO; linha++){ 
+  	para (inteiro coluna = 0; coluna <TAMANHO; coluna++) {
+  		matriz [linha] [coluna] = ...
+  		escreva ("[" matriz[linha] [coluna], "]")
+  
+  	}
+  } 
+  ```
 
-{matriz [linha] [coluna] = ...
+  
 
-escreva ("[" matriz[linha] [coluna], "]")
+- Estrutura de Dados: estrutura organizada de dados na memória de um dispositivo de armazenamento, para que os dados sejam utilizados de maneira correta.
 
-}
 
-} escreva ih
 
 ## Paradigmas de Programação
 
@@ -375,7 +371,7 @@ Técnicas diferentes de montar uma estrutura e execução de um código, o que a
 
   - Objetos: tudo que possui comportamentos, atributos e estado. Na programação, o objeto herda os atributos da classe, e pode ser definido para cada objeto.
 
-  - Visibilidade (encapsulamento): protege o código e suas funcionalidades, pois define quem pode alterar suas linhas em três níveis principais: pública (+), privada (-) e protegida(#). O encapsulamento dos atributos e métodos impede o vazamento do escopo (um método ou atributo que está visível para alguma classe que não deveria estar), o que evita a confusão de variáveis globais no programa.
+  - Visibilidade (encapsulamento): protege o código e suas funcionalidades, pois define quem pode alterar suas linhas em três níveis principais: pública (+), privada (-) e protegida (#). O encapsulamento dos atributos e métodos impede o vazamento do escopo (um método ou atributo que está visível para alguma classe que não deveria estar), o que evita a confusão de variáveis globais no programa.
 
   - Métodos: determinam o comportamento dos objetos de uma determinada classe e são capazes de controlar o estado da instância. São funções que realizam tarefas, que podem retornar ou não valores e ainda receber ou não parâmetros.
 
