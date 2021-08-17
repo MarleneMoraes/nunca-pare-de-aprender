@@ -152,22 +152,53 @@
 	INSERT INTO novaTabela (nome, nascimento) VALUES ('Marlene', '1994-10-11')
 	INSERT INTO novaTabela (nome, nascimento) VALUES ('Helena', '2002-12-20')
 
-
-/* Para alterar algo da tabela (neste caso, adicionando uma coluna após a coluna nascimento) */
+-- Para alterar algo da tabela (neste caso, adicionando uma coluna após a coluna nascimento) 
 ALTER TABLE .novaTabela ADD genero VARCHAR (1) NOT NULL AFTER nascimento;
 
-
-/* Para atualizar TODOS os dados da coluna */
+-- Para atualizar TODOS os dados da coluna 
 UPDATE novaTabela SET nome='Marlene Moraes'
 
-/* Para atualizar os dados com a condição de ser em um campo específico */
+-- Para atualizar os dados com a condição de ser em um campo específico 
 UPDATE novaTabela SET nome='Marlene Moraes' WHERE id=1;
 
-/* Para deletar (não é reversível) */
+-- Para deletar (não é reversível) 
 DELETE FROM novaTabela WHERE id=1;
 
 
-/* Uma boa prática para evitar deletar dados errados é selecionar antes de excluir */
+-- Uma boa prática para evitar deletar dados errados é selecionar antes de excluir 
 SELECT * FROM novaTabela WHERE id=2;
 
 DELETE FROM novaTabela WHERE id=5;
+
+
+-- JOIN: Trabalhar com dados entre tabelas. Existem 3 tipos: INNER JOIN, OUTER JOIN E SELF-JOIN.
+	-- INNER JOIN → retorna apenas os resultados que correspondem (existem) tanto na tabela 1 quanto na tabela 2 (Interseção)
+
+	SELECT C.PrimaryKeyTabela1, C.DadoTabela1, E.DadoTabela2, E.DadoTabela2
+	FROM Tabela1 AS C
+	INNER JOIN Tabela2 AS E 
+	ON E.PrimaryKeyTabela2 = C.ForeignKeyTabela1; -- As chaves que são em comum para junção das tabelas
+
+	-- FULL OUTER JOIN → retorna um conjunto de todos registros correspondentes da TabelaA e TabelaB quando são iguais. Se não houver valores correspondentes, irá preencher como "NULL".
+	
+	SELECT *
+	FROM Tabela1 AS C
+	FULL OUTER JOIN Tabela2 AS E 
+	ON E.PrimaryKeyTabela2 = C.ForeignKeyTabela1;
+
+	-- LEFT JOIN → retorna um conjunto de todos registros correspondentes da TabelaA e os registros correspondentes da TabelaB. Se não houver valores correspondentes, irá preencher como "NULL".
+	
+	SELECT *
+	FROM Tabela1 AS C
+	LEFT JOIN Tabela2 AS E 
+	ON E.PrimaryKeyTabela2 = C.ForeignKeyTabela1;
+
+	--UNION → combina dois ou mais resultados de um select em um único resultado
+	SELECT coluna1, coluna2
+	FROM tabela1
+	UNION
+	SELECT coluna1, coluna2
+	FROM tabela2
+
+	-- SELF JOIN → agrupar dados dentro de uma mesma tabela. Somente será possível usá-lo com o comando AS
+
