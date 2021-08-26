@@ -98,9 +98,13 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
 
       - *Primary Key* (Chave Primária): identificador único do registro e são incrementadas automaticamente pelo Banco de Dados, podendo ser única ou composta. Ela melhora a performance na busca porque indexa todos os registros e a retorna de maneira mais rápida. 
 
-        É importante que as tabelas tenham uma chave primária para identificação dos registros, pois pode haver dados idênticos (como o nome de uma pessoa ser igual a outra). A Chave Primária também permite que tabelas se relacionem: a chave primária de uma tabela é a chave estrangeira de outra e vice-versa.  
+        É importante que as tabelas tenham uma chave primária para identificação dos registros, pois pode haver dados idênticos (como o nome de uma pessoa ser igual a outra).  Há como criar as Chaves Primárias através de restrições (ou *constraints* em inglês). A Chave Primária também permite que tabelas se relacionem: a chave primária de uma tabela é a chave estrangeira de outra e vice-versa.  
 
-      - *Foreign Key* (Chave Estrangeira): referência de uma tabela para outra tabela. Uma chave estrangeira sempre será a cópia de uma chave primária, de mesmo tipo e quantidade, pois a chave estrangeira referencia uma chave primária.
+      - *Foreign Key* (Chave Estrangeira): identificador único do registro de outra tabela, podendo ser única ou composta; é uma referência de uma tabela para outra tabela. Basicamente, a Chave Estrangeira é uma Chave Primária de outra tabela. Uma chave estrangeira sempre será a cópia de uma chave primária, de mesmo tipo e quantidade, pois a chave estrangeira referencia uma chave primária.
+
+        A tabela que contém a Chave Estrangeira é chamada de Tabela Referenciadora ou Tabela Filho, e a tabela na qual a Chave Estrangeira é referenciada é chamada de Tabela Referenciada ou Tabela Pai.
+
+        :exclamation: Importante lembrar que a tabela pode possuir mais de uma Chave Estrangeira, dependendo do seu relacionamento com outras tabelas. 
 
     - Tipos de relacionamentos:
 
@@ -134,30 +138,53 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
   - 2ª Fase: Não deve haver informações constantes duplicadas que dependam da chave primária. Importante identificar quando ela varia conforme o tempo, como um preço de um produto, pois o registro deve ser conforme o período de compra com determinado preço e o preço atual na tabela de descrição do produto (que pode modificar conforme o tempo).
   - 3ª Fase: Restringir dados, criando uma tabela em formato de glossário, com um número como chave primária e o significado de cada código, como o status do pedido.
 
-- Comandos SQL
+- Tipos de Dados SQL
 
-  - `CREATE TABLE [nome da tabela]`: Cria uma nova tabela;
+  - Booleanos: Por padrão, ele é inicializado como nulo, e pode receber tanto 1 ou 0
 
-  - `INSERT INTO [nome da tabela] ([coluna], [coluna]) VALUES (['[valor]', '[valor]'])`: Adiciona os valores indicados respectivamente na coluna declarada.
+  - Caracteres: 
 
-  - `ALTER TABLE [nome da tabela]`: Alteração na  tabela
+    - Tamanho fixo (CHAR): permite inserir até uma quantidade fixa de caracteres e sempre ocupa todo o espaço reservado 
+    - Tamanhos variáveis (VARCHAR / nVARCHAR): permite inserir até uma quantidade fixa de caracteres que for definida, porém só ocupa o espaço que for preenchido.
 
-    - `ALTER TABLE [nome da tabela] ADD [coluna] [tipo de dado] ([quantidade de caracteres]) AFTER [coluna existente]`: Adiciona na tabela uma coluna, declarando o tipo e quantidade dos dados e sua localização na tabela (no caso, após a coluna existente).
+  - Números:
 
-  - `SELECT [coluna] FROM [nome da tabela]`: seleciona um dado;
+    - Valores exatos
 
-    - `SELECT ISNULL, GETDATE (coluna) FROM [tabela]`: se essa coluna for nula, retornar no local, GETDATE
+      - TINYINT: valores inteiros.
 
-    - Estrutura condicional:
+      - SMALLINT: valores inteiros, com limite maior que TINYINT.
 
-      ```sql
-      SELECT * ,
-      	CASE WHEN [coluna] = '[dado]' THEN '[dado que substituirá]'
-      	CASE WHEN [coluna] = '[dado]' THEN '[dado que substituirá]'
-      	ELSE 'dado que não cabe aos anteriores'
-      	END
-      FROM [tabela]
-      ```
+      - INT: valores inteiros, com limite maior que SMALLINT.
 
-    - `SELECT *, CONVERT ([tipo de dado desejado] ([tamanho dele, ou o seu máximo]), [coluna]) FROM [tabela]`: conversão para um tipo desejado, podendo declarar seu tamanho ou não em uma determinada coluna na tabela indicada. 
+      - BIGINT: valores inteiros, com limite maior que INT.
 
+      - NUMERIC ou DECIMAL: valores exatos, porém permite ter partes fracionadas que também pode ser especificadas sua precisão e escala (número de dígitos na parte fracional).
+
+        *Ex:* `NUMERIC (5, 2) ` → resultará em um número com 5 casas ao todo, sendo 2 decimais, como 113,44.
+
+    - Valores aproximados
+      - REAL: Tem precisão aproximada de até 15 dígitos
+      - FLOAT: Tem precisão aproximada de até 15 dígitos, mas com limite maior.
+
+  - Temporais
+
+    - DATE: armazena data no formato `aaaa/mm/dd`
+    - DATETIME: armazena data e hora no formato `aaaa/mm/dd:hh:mm:ss`
+    - DATETIME2: armazena data e hora com adição de milissegundos no formato `aaaa/mm/dd:hh:mm:sssssss`
+    - SMALLDATETIME: retorna data e hora respeitando o limite entre `'1900-01-01:00:00:00'` até `'2079-06-06:23:59:59'`
+    - TIME: retorna horas, minutos, segundos e milissegundos respeitando o limite entre `'00:00:00.0000000'` até `'23:59:59.9999999'`
+    - DATETIMEOFFSET: permite armazenar informações de data e horas incluindo o fuso horário.
+
+- Principais restrições aplicadas no SQL:
+
+  - NOT NULL: não permite nulos
+  - UNIQUE: força que todos os valores de uma coluna sejam diferentes
+  - PRIMARY KEY: uma junção de NOT NULL e UNIQUE
+  - FOREIGN KEY: identifica unicamente uma linha em outra tabela
+  - CHECK: força uma condição específica em uma coluna
+  - DEFAULT: força um valor padrão quando nenhum valor é passado
+
+  
+
+  
