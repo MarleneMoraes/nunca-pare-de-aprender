@@ -1,8 +1,6 @@
 # Python
 
-<small>Criador:<a href="https://pt.wikipedia.org/wiki/Guido_van_Rossum">Guido van Rossum</a>
-
-Ano: 1991<small>
+<small>Criador: [Guido van Rossum](https://pt.wikipedia.org/wiki/Guido_van_Rossum)<br/>Ano: 1991</small>
 
 [Documentação oficial do Python](https://www.python.org/doc/)
 
@@ -24,7 +22,7 @@ Python é uma linguagem simples e muito produtiva. Nela, não há preocupação 
 
 
 
-+ Python é bastante usado em ciência de dados, machine learning e inteligência artificial. Também é muito utilizado na cibersegurança para realização de scripts e automatizações;
++ Python é bastante usado em ciência de dados, *machine learning* e inteligência artificial. Também é muito utilizado na cibersegurança para realização de scripts e automatizações;
 
 + Há frameworks, como Django e Flask, que te permitem fazer sites e outras aplicações;
 
