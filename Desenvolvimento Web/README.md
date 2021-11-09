@@ -23,11 +23,29 @@ Sistema de documentos na Internet que permitem o acesso às informações aprese
 
 Os hipertextos são textos digitais com informações de texto e hipermídias são conteúdos digitais com informações como imagens, sons, vídeos, que podem ser acessados pelos links e são interligados e executados na internet. A interação com os hipertextos são realizadas através de navegadores *(browsers)*, como o Google Chrome, Mozilla Firefox, Opera, Safari, Internet Explorer (atual Microsoft Edge).
 
-Para o usuário possuir acesso aos hipertextos e hipermídias, é digitado a *Uniform Resource Locator* (URL, ou Localização Padrão de Recursos), o que consiste no endereço do site. Ao realizar a entrada da URL no *browser*, este é encarregado a montar uma requisição para o *server* (servidor), que é feita com base no protocolo de comunicação pré-definido: *Hypertext Transfer Protocol* [(HTTP)](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview), que possui algumas regras de comunicação, como qualquer protocolo, onde se baseia em requisição e resposta.
+Para o usuário/cliente possuir acesso aos hipertextos e hipermídias, é digitado a *Uniform Resource Locator* (URL, ou Localização Padrão de Recursos), o que consiste no endereço do site. Ao realizar a entrada da URL no *browser*, este é encarregado a montar uma requisição para o *server* (servidor), que é feita com base no protocolo de comunicação pré-definido: *Hypertext Transfer Protocol* [(HTTP) — definido pela RFC 2616(IETF) — que possui algumas regras de comunicação, como qualquer protocolo, onde se baseia em requisição e resposta. Em outras palavras, o HTTP é o protocolo de rede, responsável pela transferência de conteúdo web pela internet.
 
-Para o estabelecimento dessas regras, foi necessário a criação de uma linguagem de marcação para definir o formato de escrita dos hipertextos e hipermídia, que trafegam a internet: *HyperText Markup Language* [(HTML)](https://developer.mozilla.org/pt-BR/docs/Web/HTML). 
+<img src="\cliente-servidor.png" style="width:80%;" />
 
-<img src="./HTTP & layers.png"><small>Disponível em: [Uma visão geral do HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview)</small>
+<p style="text-align:right;"><small>Disponível em: <a href="https://www.softblue.com.br/site/page/id/CursoJSP">Funcionamento de aplicações web</a></small></p>
+
+A requisição cliente-servidor funciona basicamente quando o usuário/cliente solicita a abertura de uma página através da sua URL. Essa requisição trafega pela rede através do protocolo HTTP para o servidor (HTTP *Request*), que analisa a requisição e procura a página como uma lista telefônica. Quando a encontra, o servidor envia a página como resposta para o usuário/cliente usando protocolo (HTTP *Response*), onde o browser interpreta a página recebida. Importante lembrar que o HTTP *Response* retorna um código de status, como o famoso ERROR 404. 
+
+Para o estabelecimento dessas regras, foi necessário a criação de uma linguagem de marcação para definir o formato de escrita dos hipertextos e hipermídia, que trafegam a internet: *HyperText Markup Language* [(HTML)](https://developer.mozilla.org/pt-BR/docs/Web/HTML). Ver mais em: 
+
+ 
+
+<img src="./HTTP & layers.png" width="500px">
+
+<p style="text-align:right;"><small>Disponível em: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview">Uma visão geral do HTTP</a></small></p>
+
+Na imagem, podemos observar as camadas que compõem o tráfego de informação pela internet. 
+
+— Protocolo IP: move os pacotes de um computador para outro. Esses pacotes são os dados que o usuário/cliente envia quando solicita uma requisição.
+
+— Protocolo TCP: transporta os dados de forma confiável.
+
+
 
 - História
 
