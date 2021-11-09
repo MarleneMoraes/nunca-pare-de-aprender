@@ -25,7 +25,7 @@ Os hipertextos são textos digitais com informações de texto e hipermídias s�
 
 Para o usuário/cliente possuir acesso aos hipertextos e hipermídias, é digitado a *Uniform Resource Locator* (URL, ou Localização Padrão de Recursos), o que consiste no endereço do site. Ao realizar a entrada da URL no *browser*, este é encarregado a montar uma requisição para o *server* (servidor), que é feita com base no protocolo de comunicação pré-definido: *Hypertext Transfer Protocol* [(HTTP) — definido pela RFC 2616(IETF) — que possui algumas regras de comunicação, como qualquer protocolo, onde se baseia em requisição e resposta. Em outras palavras, o HTTP é o protocolo de rede, responsável pela transferência de conteúdo web pela internet.
 
-<img src="\cliente-servidor.png" style="width:80%;" />
+<img src=".\cliente-servidor.png" style="width:80%;" />
 
 <p style="text-align:right;"><small>Disponível em: <a href="https://www.softblue.com.br/site/page/id/CursoJSP">Funcionamento de aplicações web</a></small></p>
 
