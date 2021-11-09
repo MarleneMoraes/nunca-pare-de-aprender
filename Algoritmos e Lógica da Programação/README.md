@@ -353,10 +353,44 @@ Técnicas diferentes de montar uma estrutura e execução de um código, o que a
 
   - Programação orientada a objetos (POO): paradigma cujo foco é o conceito de objetos e caracterizam-se na forma de campos (atributos ou propriedades) e códigos, e geralmente possuem procedimentos (métodos ou funções). Um procedimento de um objeto pode acessar e geralmente modificar os atributos associados, podendo ser visto como uma "máquina independente". Você pode definir objetos em um mesmo procedimento porém com atributos diferentes.
     - Os 4 pilares da POO:
-      - Abstração: técnica que permite esconder do "cliente" de um código detalhes de implementação interna; os "clientes" do método não precisam saber como ele funciona, mas pode invocá-lo com os parâmetros necessários. 
-      - Encapsulamento: técnica de esconder membros de uma classe do "exterior".
+      - Abstração (algumas bibliografias não consideram este pilar): técnica que permite esconder do "cliente" de um código detalhes de implementação interna; os "clientes" do método não precisam saber como ele funciona, mas pode invocá-lo com os parâmetros necessários. 
+      
+      - Encapsulamento (classe sem atributos, somente métodos): "ocultar partes independentes da implementação, permitindo construir partes invisíveis ao mundo exterior"; técnica de esconder membros de uma classe do "exterior"; possui um mesmo padrão na classe; um código torna-se "protegido" para códigos limpos. Um bom encapsulamento possui uma boa interface. 
+      
+        - Vantagens: tornar mudanças invisíveis; facilitar a reutilização do código; redução dos efeitos colaterais (caso tenha mudanças, um encapsulamento não ou mal feito, pode afetar o funcionamento do programa).
+      
+        :warning:Encapsular não é obrigatório.
+      
+        
+      
+        **Exemplo:**
+      
+        ``` portugol
+        interface Controlador
+        
+        	//Métodos Abstratos
+            publico abstrato Metodo ligar()
+            publico abstrato Metodo desligar()
+            publico abstrato Metodo abrirMenu()
+            publico abstrato Metodo fecharMenu()
+            publico abstrato Metodo maisVolume()
+            publico abstrato Metodo menosVolume()
+            publico abstrato Metodo ligarMudo()
+            publico abstrato Metodo desligarMudo()
+            publico abstrato Metodo play()
+            publico abstrato Metodo pause()
+            
+        fimInterface
+        
+        ```
+      
+        
+      
+        
+      
       - Herança: técnica que permite a reutilização, extensão e modificação de características e comportamentos de outras classes. A classe que é herdada é comumente chamada de base ou pai, e a que herda, derivada ou filha. Ela é afetada pelo encapsulamentos que estejam aplicados à classe base. 
-      - Polimorfismo: técnica que permite que objetos de classes derivadas tenham comportamento diferente da classe base. Se expressa através de palavras-chave virtual (define quais comportamentos poderão ser alterados na classe derivada) e override (responsável pela implementação do método virtual na classe derivada).
+      
+      - Polimorfismo (várias formas): técnica que permite que objetos de classes derivadas tenham comportamento diferente da classe base. Se expressa através de palavras-chave virtual (define quais comportamentos poderão ser alterados na classe derivada) e override (responsável pela implementação do método virtual na classe derivada).
   - Programação Estruturada (PE): interpretação linha a linha em pequenos trechos de código, sem ordem específica.
     - Tipos de estruturas básicas: 
       - Sequência: execução de cima a baixo, linha a linha em sequência.
