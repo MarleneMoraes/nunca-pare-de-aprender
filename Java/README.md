@@ -28,12 +28,13 @@ Linguagem de programação orientada a objetos e plataforma computacional compil
 
   No Linux: `$sudo apt-get install openjdk-8-jrk`
 
-- *Java Standard Edition* (Java SE): distribuição mínima para desenvolvedores Java
+  :exclamation: OpenJDK é a implementação de referência de código aberto da Plataforma
 
-  - OpenJDK é a implementação de referência de código aberto da Plataforma
+**Ramificações do Java**
 
-- *Java Enterprise Edition* (Java EE): extensão da JavaSE com suporte a desenvolvimento de sistemas corporativos.
+- *Java Standard Edition* (Java SE): distribuição base, com ambiente de execução e bibliotecas comuns
 
+- *Java Micro Edition* (Java ME): distribuição mínima para desenvolvimento móvel
+- *Java Enterprise Edition* (Java EE): extensão da JavaSE com suporte a desenvolvimento de sistemas corporativos e internet.
   - [Glassfish](https://javaee.github.io/glassfish) é a implementação de referência de código aberto da Plataforma
-
 - Jakarta EE: códigos, implementações e especificações do Java EE cedidos pela Oracle para *Eclipse Foundation*, compatível com Java EE. Como o Java EE é uma marca registrada, foi nomeado por Jakarta EE por consulta pública.
