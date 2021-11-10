@@ -23,7 +23,13 @@ Sistema de documentos na Internet que permitem o acesso às informações aprese
 
 Os hipertextos são textos digitais com informações de texto e hipermídias são conteúdos digitais com informações como imagens, sons, vídeos, que podem ser acessados pelos links e são interligados e executados na internet. A interação com os hipertextos são realizadas através de navegadores *(browsers)*, como o Google Chrome, Mozilla Firefox, Opera, Safari, Internet Explorer (atual Microsoft Edge).
 
-Para o usuário/cliente possuir acesso aos hipertextos e hipermídias, é digitado a *Uniform Resource Locator* (URL, ou Localização Padrão de Recursos), o que consiste no endereço do site. Ao realizar a entrada da URL no *browser*, este é encarregado a montar uma requisição para o *server* (servidor), que é feita com base no protocolo de comunicação pré-definido: *Hypertext Transfer Protocol* [(HTTP) — definido pela RFC 2616(IETF) — que possui algumas regras de comunicação, como qualquer protocolo, onde se baseia em requisição e resposta. Em outras palavras, o HTTP é o protocolo de rede, responsável pela transferência de conteúdo web pela internet.
+Para o usuário/cliente possuir acesso aos hipertextos e hipermídias, é digitado a *Uniform Resource Locator* (URL, ou Localização Padrão de Recursos), o que consiste no endereço do site. 
+
+<img src=".\url.png" style="width:80%;" />
+
+<p style="text-align:right;"><small>Disponível em: <a href="https://www.softblue.com.br/site/page/id/CursoJSP">Anatomia de uma URL</a></small></p>
+
+Ao realizar a entrada da URL no *browser*, este é encarregado a montar uma requisição para o *server* (servidor), que é feita com base no protocolo de comunicação pré-definido: *Hypertext Transfer Protocol* [(HTTP) — definido pela RFC 2616(IETF) — que possui algumas regras de comunicação, como qualquer protocolo, onde se baseia em requisição e resposta. Em outras palavras, o HTTP é o protocolo de rede, responsável pela transferência de conteúdo web pela internet.
 
 <img src=".\cliente-servidor.png" style="width:80%;" />
 
@@ -45,40 +51,43 @@ Na imagem, podemos observar as camadas que compõem o tráfego de informação p
 
 — Protocolo TCP: transporta os dados de forma confiável.
 
+**Requisições GET/POST**
 
+- GET: requisita os dados do servidor diretamente na URL, mas pode ser usada também para enviar alguns dados do servidor. Utilizado em formulários de pesquisa, requisições de  página através de um hiperlink, e navegação geral em páginas de um site.
+- POST: envia os dados ao servidor e são enviados no corpo do protocolo HTTP, ou seja, os dados enviados na página HTML são passados para o protocolo e não expostos na URL, como no método GET. Utilizado em formulário de cadastro, envio de usuário e senha ao servidor, upload de arquivo e muitos dados a serem enviados ao servidor.
 
-- História
+**História**
 
-  Década de 1990, Tim Berners-Lee queria "dar uma cara" para internet e cria a *World Wide Web* (www), o protocolo HTTP e o HTML, onde há uma dependência entre eles.
+Década de 1990, Tim Berners-Lee queria "dar uma cara" para internet e cria a *World Wide Web* (www), o protocolo HTTP e o HTML, onde há uma dependência entre eles.
 
-  WWW é uma sub-rede dentro do protocolo HTTP e feita com a linguagem de marcação HTML, que faz parte da Internet.
+WWW é uma sub-rede dentro do protocolo HTTP e feita com a linguagem de marcação HTML, que faz parte da Internet.
 
-- Características das Páginas Web:
+**Características das Páginas Web:**
 
-  - Páginas Estáticas: páginas com conteúdo fixo (também chamado de *hardcode*);
-  - Páginas Dinâmicas: páginas criadas em tempo de requisição, onde boa parte do conteúdo HTML é produzido com uma linguagem de programação como JavaScript e suas frameworks; e PHP.
+- Páginas Estáticas: páginas com conteúdo fixo (também chamado de *hardcode*) em servidor web; arquivos já existentes.
+- Páginas Dinâmicas: páginas criadas dinamicamente em tempo de requisição, onde boa parte do conteúdo HTML é produzido com uma linguagem de programação como JavaScript e suas frameworks; PHP; *servlets* e JSPs (Java Web).
 
-- Web Stacks: tecnologias utilizadas para utilização Web.
+**Web Stacks**: tecnologias utilizadas para utilização Web.
 
-  - Servidores Web: Nginx, Apache, Microsoft IIS (*Internet Information Services*).
+- Servidores Web: Nginx, Apache, Microsoft IIS (*Internet Information Services*).
 
-  - Linguagem de Programação: PHP e *framework* Laravel, JavaScript, Perl, Python, [ASP.NET](https://github.com/MarleneMoraes/nunca-pare-de-aprender/tree/main/ASP.NET%20Core), Java, e Express (*framework* de Node.js).
+- Linguagem de Programação: PHP e *framework* Laravel, JavaScript, Perl, Python, [ASP.NET](https://github.com/MarleneMoraes/nunca-pare-de-aprender/tree/main/ASP.NET%20Core), Java, e Express (*framework* de Node.js).
 
-  - [Banco de Dados](https://github.com/MarleneMoraes/nunca-pare-de-aprender/tree/main/Banco%20de%20Dados): PostgreSQL, Microsoft SQL Server, MySQL, Oracle, MongoDB.
+- [Banco de Dados](https://github.com/MarleneMoraes/nunca-pare-de-aprender/tree/main/Banco%20de%20Dados): PostgreSQL, Microsoft SQL Server, MySQL, Oracle, MongoDB.
 
-  - Stacks conhecidas: combinações das tecnologias citadas acima para atender determinada demanda ou preferências pessoais da equipe. 
+- Stacks conhecidas: combinações das tecnologias citadas acima para atender determinada demanda ou preferências pessoais da equipe. 
 
-    - Stack WAMP (Windows, Apache, MySQL e PHP): a mais conhecida e procurada pelo mercado brasileiro. 
+  - Stack WAMP (Windows, Apache, MySQL e PHP): a mais conhecida e procurada pelo mercado brasileiro. 
 
-      - XAMPP: Pacote de desenvolvimento multiplataforma utilizando Apache, Maria DB, PHP e Perl, semelhante ao WAMP. 
+    - XAMPP: Pacote de desenvolvimento multiplataforma utilizando Apache, Maria DB, PHP e Perl, semelhante ao WAMP. 
 
-    - Stack WIMP (Windows Server, IIS, MySQL e PHP).
+  - Stack WIMP (Windows Server, IIS, MySQL e PHP).
 
-    - Stack WISA (Windows, IIS, SQLServer e ASP.NET).
+  - Stack WISA (Windows, IIS, SQLServer e ASP.NET).
 
-    - Stack MEAN (Mongodb, Express, Angular, Nodejs).
+  - Stack MEAN (Mongodb, Express, Angular, Nodejs).
 
-      
+    
 
 <img src="./webstacks.png">
 

@@ -43,7 +43,7 @@ CSS é a sigla de *Cascading Style Sheets* (Folhas de Estilo em Cascata, em trad
 
 **Harmonia das Cores**: É importante que a estilização das páginas tenha harmonia entre as cores. Para isso, o círculo cromático auxilia a compreensão desta harmonia. 
 
-<img src="/circulo-cromatico.jpg" alt="Círculo Cromático" style="width: 250px;"/>
+<img src="./circulo-cromatico.jpg" alt="Círculo Cromático" style="width: 250px;"/>
 
 
 
@@ -53,13 +53,13 @@ CSS é a sigla de *Cascading Style Sheets* (Folhas de Estilo em Cascata, em trad
 
 **Temperaturas de cores**: dividida em hemisférios frio e quente.
 
-<img src="/circulo-cromatico-frias-quentes.png" alt="Cores Frias e Quentes" style="width:200px;" />
+<img src="./circulo-cromatico-frias-quentes.png" alt="Cores Frias e Quentes" style="width:200px;" />
 
 ​		:exclamation: Escolha da palheta de 3 a 5 cores (exceto preto e branco)
 
 - Definições:
 
-  <img src="/paleta-dividida.png" alt="Círculo Cromático com divisões" style="width:200px" />
+  <img src="./paleta-dividida.png" alt="Círculo Cromático com divisões" style="width:200px" />
 
   - Cores complementares: cores que contrastam (extremo opostos)
   - Cores análogas: cores vizinhas
@@ -68,6 +68,5 @@ CSS é a sigla de *Cascading Style Sheets* (Folhas de Estilo em Cascata, em trad
   - Cores intercaladas: escolha de uma cor e pula a vizinha para a escolha da próxima cor.
   - Cores Triádicas: escolha de uma cor e pula três cores vizinhas seguidas para a escolha da próxima cor, o que forma um triângulo equilátero dentro do círculo cromático.
   - Cores em quadrado: escolha de uma cor, pula duas cores vizinhas para a próxima cor, gerando um quadrado. Utilizado para cores fortes e bem balanceadas.
-  - Cores Triádicas: escolha de uma cor, sua complementar e outra cor e sua complementar, formando um retângulo.
   - Monocromia: escolha de uma cor, alterando apenas a saturação e o brilho.
 
