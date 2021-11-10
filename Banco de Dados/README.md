@@ -1,7 +1,9 @@
 # Banco de Dados
 <small>Criador: Edgar Frank Codd <br/>Ano: 1970 </small>
 
-Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u>persistentes</u> e <u>relacionados</u>, usados pelos sistemas de aplicação de uma determinada empresa; Coleções organizadas de dados que se relacionam de forma a criar algum sentido (informação) e dar mais eficiência durante uma pesquisa ou estudo científico. 
+Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u>persistentes</u> e <u>relacionados</u>, usados pelos sistemas de aplicação de uma determinada empresa; Coleções organizadas de dados que se relacionam de forma a criar algum sentido (informação) e dar mais eficiência durante uma pesquisa ou estudo científico; Ferramentas que permitem o armazenamento e manipulação de dados organizados em forma de tabelas (.
+
+
 
 **Objetivo:**  atender a uma <u>comunidade de usuários</u> com a reunião de informações de maneira organizada, consistente, protegida e acessível em tempo hábil; registrar instâncias separadas de dados com características em comum (não valores).
 
@@ -112,7 +114,7 @@ Conjuntos de arquivos relacionados entre si com registros; Coleção de dados <u
       - 1-N (um para vários ou um para muitos): registro em uma tabela associado a um ou mais registros de outra tabela.
       - N-N (vários para vários ou muitos para muitos): vários registros em uma tabela associado a vários registros de outra tabela.
 
-  - **Banco de Dados Não-Relacional:** comumente chamado de Banco de Dados No-SQL, permitem que os dados relacionados sejam feitos em uma única estrutura de dados, pois não utiliza a estrutura de tabelas.
+  - **Banco de Dados Não-Relacional:** comumente chamado de Banco de Dados No-SQL, são arquivos estruturados e permitem que os dados relacionados sejam feitos em uma única estrutura de dados, pois não utiliza a estrutura de tabelas.
     
     - Vantagens de uso:
       - Armazenamento de grandes volumes de dados sem estrutura definida; 
