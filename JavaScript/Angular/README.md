@@ -16,21 +16,21 @@ O Angular é construído com TypeScript, linguagem criada pela Microsoft que per
 
 As aplicações são construídas nas frameworks por uma árvore de componentes (AppComponents), que são organizadas em módulos (AppModule) e utiliza a visibilidade dentro módulo apenas. 
 
-<img src="\arvore-componentes.png" style="width:80%;" />
+<img src=".\arvore-componentes.png" style="width:80%;" />
 
 
 
 Os componentes são trechos de códigos que compõem a sua tela. No caso do Angular, o componente possui um arquivo HTML, CSS e TS, onde é encapsulado e gerado uma tag para ele. Quando é criado um componente, este deve possuir pelo menos um arquivo TypeScript, pois o Angular encontra o arquivo HTML e CSS dentro do arquivo, com referências para eles.
 
-<img src="\o-que-e-componentes.png" style="width:80%;" />
+<img src=".\o-que-e-componentes.png" style="width:80%;" />
 
 <p style="text-align:right;"><small>Disponível em: <a href="https://www.cod3r.com.br/courses/take/angular-9-essencial/">Angular 9 - Essencial</a></small></p>
 
-- **Versões Angular**
+**Versões Angular**
 
-  - Versão 1: AngularJS
+- Versão 1: AngularJS
 
-  - Novo Angular (2-9): baseado em componentes, o Angular passou por uma refatoração no código pela própria equipe, e 2 versões de lançamentos por ano.
+- Novo Angular (2-9): baseado em componentes, o Angular passou por uma refatoração no código pela própria equipe, e 2 versões de lançamentos por ano.
 
 - Instalação: instalada pelo *command line interface* (CLI) global
 
@@ -45,4 +45,22 @@ Os componentes são trechos de códigos que compõem a sua tela. No caso do Angu
     :exclamation: Todos os comandos feitos em JavaScript é compatível com o TypeScript. Logo, poderá ser escrito no TypeScript 
 
   
+
+**Arquivos**
+
+- Pastas do projeto
+
+  `app`: pasta principal de componente. Os componentes em um geral se 
+
+  `assets`: pasta referente aos arquivos de imagens, fontes, vídeos.
+
+  `environments`: pasta referente à variáveis de ambiente de produção
+
+- Documentos do projeto
+
+  `index.html`: Página principal, visto que é uma página única de aplicação (SPA), onde aponta ao componente na pasta `app`, que usa um seletor para cada componente selecionado.
+
+**Interpolação de elementos**
+
+Há como fazer interpolação de elementos inserindo duas chaves (`{{}}`) no documento `.html` e inserindo o componente pelo documento typescript `app.components.ts`.
 
