@@ -60,7 +60,35 @@ Os componentes são trechos de códigos que compõem a sua tela. No caso do Angu
 
   `index.html`: Página principal, visto que é uma página única de aplicação (SPA), onde aponta ao componente na pasta `app`, que usa um seletor para cada componente selecionado.
 
+:exclamation: Para gerar um template externo e não *inline*, basta indicar ao `app.component.ts` :
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: 'app.component.html'
+})
+```
+
+​	Assim, basta criar o arquivo HTML indicado na pasta `app` para externalizar o componente.
+
 **Interpolação de elementos**
 
 Há como fazer interpolação de elementos inserindo duas chaves (`{{}}`) no documento `.html` e inserindo o componente pelo documento typescript `app.components.ts`.
 
+**Instalações**
+
+- Dependências do material de Design: `ng add @angular/material` 
+
+  - [Indigo/Pink](https://material.angular.io?theme=indigo-pink)
+
+  - [Deep Purple/Amber](https://material.angular.io?theme=deeppurple-amber)
+
+  - [Pink/BlueGrey](https://material.angular.io?theme=pink-bluegrey)
+
+  - [Purple/Green](https://material.angular.io?theme=purple-green)
+
+    
+
+  
