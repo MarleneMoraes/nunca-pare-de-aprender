@@ -17,6 +17,29 @@ Comunicação entre computadores, permitindo a troca de dados entre eles atravé
     - NSFnet (universidades)
     - Comercial
 
+**Representação de Dados**
+
+- Dígitos binários (bit): 8 bits = 1 byte
+
+  | Múltiplos do byte |                  |
+  | ----------------- | ---------------- |
+  | 1024 bytes        | 1 KB             |
+  | 1024 KB           | 1 MB             |
+  | 1024 MB           | 1 GB             |
+  | 1024 GB           | 1 TB             |
+  | 1024 TB           | 1 PB (petabyte)  |
+  | 1024 PB           | 1 EB (exabyte)   |
+  | 1024 EB           | 1 ZB (zettabyte) |
+  | 1024 ZB           | 1 YB (yottabyte) |
+
+  :exclamation: MB ≠ Mb
+
+  MB = megabytes (armazenamento)
+
+  Mb = megabits (transmissão)
+
+  
+
 ### Web
 
 Sistema de documentos na Internet que permitem o acesso às informações apresentadas no formato de hipertexto e hipermídia, serviço que depende da internet para existir. A Web tem a característica de ser um emaranhado de páginas por meio de links, que o usuário pode navegar entre eles. 
