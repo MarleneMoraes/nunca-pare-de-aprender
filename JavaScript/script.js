@@ -25,26 +25,149 @@
         let nomeDoArray = [nomeDaVariavel,nomeDaVariavel, nomeDaVariavel];
 
     //Funções (fuctions) → nomeada com um verbo + substantivo
-        let nomeDaVariavel = valor;
-        
-        function nomeDaFuncao(){
-            nomeDaVariavel = ação;
-        }
-
-        //Tipo de funções
-            //Realiza uma tarefa e não retorna nada - sem modificações
+        //First class function: função que tratada como qualquer outra variável
                 
+            let nomeDaVariavel = valor;
+            
             function nomeDaFuncao(){
-                    ação;
-                }
+                nomeDaVariavel = ação;
+            }
 
-            //Realiza cálculo ou operação e retorna um resultado
-                let nomeDaVariavel=valor;
+            nomeDaFuncao(); //invocar a função
 
-                function nomeDaFuncao(){
-                    return ação;
+            //Anatomias de função (function)
+                //Function declaration
+                            
+                    //Realiza uma tarefa e não retorna nada - sem modificações
+                    
+                        function nomeDaFuncao(){
+                            ação;
+                        }
+
+                    //Função com parâmetros
+                        function nomeDaFuncao(parametro) {
+                            ação;
+                        }
+
+                    //Realiza cálculo ou operação e retorna um resultado
+                        let nomeDaVariavel=valor;
+
+                        function nomeDaFuncao(){
+                            return ação;
+                        }
+                        console.log(ação);
+
+                //Anonymus function: função que não tem nome
+                    (function (parametros){
+                        ação;
+                    })
+
+                //Function expression: armazenamento de funções em variáveis (anônimas ou não)
+                    let nomeDaVariavel = function (parametros){
+                        return ação;
+                    };
+
+                //Function arrow: uma function expression simplificada. OBS: function arrow é sempre anônima
+                    //os parâmetros podem ser apresentados com ou sem os parênteses
+                        let nomeDaVariavel = parametros => { 
+                            return ação;
+                        };
+
+                    //esta função pode ser escrita em uma única linha, mas não pode está escrito return, porque ela automaticamente retorna 
+                        const nomeDaFuncao = parametro => ação;
+                        const nomeDaFuncao = (parametros) => ação;
+                
+                //IIFE - Immediately Invoked Function Expression: função anônima invocada logo em seguida após o fechamento dos parênteses, utilizada em um escopo mais restrito.
+                    (function(parametros){
+                        return ação;
+                    })(valores);
+
+                    
+                    //Sem parâmetros
+                        (function(){
+                            let nomeDaVariavel = valor;
+                            return ação;
+                        })();
+                    
+                    //Com arrow function
+                        (() => {
+                            ação
+                        })();
+
+                        (() => ação)();
+        
+        //High-Order function: passar uma função como argumento de outra função ou retornar uma função a partir de outra função.
+            function nomeDaFuncao (parametro){
+                return parametro()
+            }
+            
+            nomeDaFuncao(nomeOutraFuncao() {
+                ação
+            })
+
+            nomeDaFuncao(funcaoPadraoJS)
+        
+            //Quebrar função em duas gera maior nível de reuso das funções
+            function nomeDaFuncao(parametro){
+                return function(parametro2){
+                    return ação
                 }
-                console.log(ação);
+            }
+
+        //Map Function: função para qualquer tipo de transformação dos elementos do array (como o dobro dos elementos). Ela deve ter o mesmo tamanho de array e recebe uma outra função como parâmetro.
+            const nomeDaConstante = [v1, v2, v3, v4, v5, v6];
+
+            const nomeDaConstante2 = nomeDaConstante.map(function(el) {
+                return el *2
+            })
+
+            //outra maneira:
+            const nomeDaConstante2 = nomeDaConstante.map((el) => {
+                return el *2
+            })
+
+            const nomeDaConstante2 = nomeDaConstante.map(el => {
+                return el *2
+            })
+
+            const nomeDaConstante2 = nomeDaConstante.map(el  => el * 2)
+
+            //Map function com objetos 
+            const nomeDoObjeto = [
+                { elemento1: 'valor', elemento2: valor },
+                { elemento1: 'valor', elemento2: valor },
+                { elemento1: 'valor', elemento2: valor },
+                { elemento1: 'valor', elemento2: valor }
+            ]
+
+            const nomeDaFuncao = el => el.valor
+            const nomeDaConstante = nomeDaFuncao 
+                .map(getScore)
+                .map(funcaoPadraoJS)
+            console.log(nomeDaFuncao, nomeDaConstante);
+        
+        //Filter function: filtra os elementos verdadeiros nas condições em que a função é definida em um array resultante.
+            const nomeDaConstante = [v1, v2, v3, v4, v5, v6];
+
+            const nomeDaConstante2 = el =>  condicao
+
+            console.log(nomeDaConstante.filter(nomeDaConstante2))
+            //console.log(nomeDaConstante.filter(el => condicao))
+
+            //Caso seja verdadeiro, retornará no console
+
+        //Filter reduce: reduz a coleção de objetos em um único. Recebe 2 parâmetros, e retorna o resultado do objeto único
+            
+            const nomeDaConstante = [v1, v2, v3, v4, v5, v6];
+
+            const nomeDaConstante2 = nomeDaConstante.reduce(nomeDaConstante, valor)
+        
+
+            //outra maneira (fazendo a média):
+            const nomeDaConstante = (v1, v2, v3, v4) => {
+                return (v1 + v2)/v4.length
+            }
+
 
 // Operadores 
     //Aritméticos
@@ -66,7 +189,6 @@
     //Comparação 
         valor===valor;//Igualdade estrita ou identidade - compara valores e tipos das variáveis. Retornará true ou false.
         valor==valor;//Igualdade solta - compara apenas valores. Caso seja dferente, ele transforma  
-        !=
 
     //Ternário
         let nomeDaVariavel = valor;
@@ -98,13 +220,14 @@
 
 //Estruturas Condicionais
     //If...Else
-        If (expressao){
-            ação
-        } else if (expressao) {
-            ação
+        if (expressao1) {
+            ação;
+        } else if (expressao2) {
+            ação;
         } else {    
             ação
         }
+
     //SwitchCase
         switch (nomeDaVariavel) {
             case valor1: 
@@ -126,7 +249,8 @@
             ação;
         }
 
-        
+
+
     
         
 
