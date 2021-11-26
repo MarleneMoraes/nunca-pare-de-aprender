@@ -10,7 +10,7 @@ Linguagem de script (executada em tempo real), com tipagem dinâmica (não preci
 >
 > MOZILLA in [O que é JavaScript?](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 
-
+[Learn JavaScript](https://learnjavascript.online/)
 
 - Nome
 
@@ -37,6 +37,106 @@ Linguagem de script (executada em tempo real), com tipagem dinâmica (não preci
     - Nome (`getElementsByName()`): seleciona um ou mais objetos JavaScript com o nome que o elemento carrega, como `(name="nascimento")`. 
     - Classe (`getElementsByClassName()`): seleciona um ou mais objetos JavaScript com a classe que o elemento carrega, como `(class="")`. 
     - Seletor (`querySelector()` / `querySelectorAll()`): seleciona um ou mais objetos JavaScript quaisquer declarados nos parênteses com sintaxe CSS. Exemplo: `let p = document.querySelector('div#msg')`  
+
+- Comandos:
+
+  - Console.log: saída dos comandos no terminal console que são escritas no JavaScript. Caso queira literalmente a expressão, como uma string, pode ser executado entre aspas simples `''`  ou aspas duplas `" "`, mas caso queira executar o valor de uma variável (també, deve utilizar a crase ` `` ` e, entre elas, o símbolo de dólar, seguido de chaves: `${nomeDaVariavel}` (veja mais no arquivo script nesta mesma pasta). 
+
+  - Comentários (`//` , para uma linha, e  `/* */`, múltiplas linhas) : blocos ignorados durante a execução do código para informar, avisar, alertar usuários e desenvolvedores, ou salvar blocos a fim de desativá-los mas não apagá-los de fato. O objetivo principal dos comentários é documentar como o código funciona para os desenvolvedores, uma vez que os profissionais trabalham em equipe e precisam compreender o código de outra pessoa. 
+
+    :exclamation: O atalho `SHIFT + ALT + A` no VSCode, com o bloco selecionado, comenta ou retira os comentários em múltiplas linhas.
+
+  - Variáveis:
+
+    - `var`: utilizada em funções com escopo, ela pode sofrer alterações em escopo (local ou global) e deve estar disponível antes da declaração. 
+
+      :warning: Após as normas do ECMA 2015, deixou de ser utilizado esta palavra e passou a ser utilizada a palavra reservada let. 
+
+    - `let`: utilizada em blocos com escopo, ela pode sofrer alterações em escopo (local ou global) e disponível somente após a declaração. 
+
+    - `const`: variável constante, onde não pode ser alterada como as demais. Ela é 
+
+    
+
+- JavaScript no cliente vs no servidor
+
+  - Cliente (*browser*): executado em navegador web, desktop, laptop ou dispositivo móvel, com acesso às funções e objetos do HTML (DOM).
+
+    Exemplo de JavaScript no browser (extraído do canal de [Glaucia Lemos](https://www.youtube.com/watch?v=Tuwo8OeDsz0&list=PLb2HQ45KP0WsFop0pItGSUYl6baYjKEye&index=2)) :
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+    	<title>Página principal</title>    
+    </head>
+    <body>
+         <button id="submit">Enviar</button>
+        
+        <!--código em Javascript-->
+        <script>
+        	alert("Olá, JavaScript!");
+        </script>
+    </body>
+    </html>
+    ```
+
+    Exemplo de chamada do JavaScript no HTML (extraído do canal de [Glaucia Lemos](https://www.youtube.com/watch?v=Tuwo8OeDsz0&list=PLb2HQ45KP0WsFop0pItGSUYl6baYjKEye&index=2)):
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+    	<title>Página principal</title>    
+    </head>
+    <body>
+         <button id="submit">Enviar</button>
+      	 <script src="index.js"></script>
+    </body>
+    </html>
+    ```
+
+    No index.js:
+
+    ```javascript
+    let submitBtn = document.getElementById("submit");
+    submitBtn.style = "background-color: springgreen";
+    
+    //O comando colorirá o botão de enviar do arquivo HTML
+    ```
+
+    
+
+  - Server (Node.js): Código executado diretamente em um computador usando um servidor. O Node não consegue interpretar elementos do HTML, o que retornaria um erro caso tentássemos executar o código acima. O node utiliza de bibliotecas e pacotes (*packages*) integrados ou de terceiros para construção de, geralmente, serviços da web. 
+
+    Os pacotes facilitam desenvolvedores a não recriar toda a lógica de programação novamente para executar uma determinada aplicação, pois o NodeJS ou a comunidade cria um pacote para facilitar a entrada e saída desta aplicação.
+
+    
+
+    Exemplo do uso do terminal do nodeJS para escrever em um documento .txt (extraído do canal de [Glaucia Lemos](https://www.youtube.com/watch?v=Tuwo8OeDsz0&list=PLb2HQ45KP0WsFop0pItGSUYl6baYjKEye&index=2)):
+
+    ```javascript
+    const fileSystem = require("fs");
+    
+    fileSystem.writeFileSync("olaMundo.txt", "Olá Mundo!");
+    
+    console.log("O arquivo olaMundo.txt foi criado.");
+    ```
+
+    
+
+    Exemplo do uso do nodeJS com o pacote `how-many-pizzas`, onde calcula quantas pizzas precisam para um certo número de pessoas (extraído do canal de [Glaucia Lemos](https://www.youtube.com/watch?v=Tuwo8OeDsz0&list=PLb2HQ45KP0WsFop0pItGSUYl6baYjKEye&index=2)):
+
+    ```javascript
+    const quantasPizzas = require("how-many-pizza");
+    
+    //Quantas pizzas eu preciso para 10.000 pessoas?
+    console.log("Você precisa %s pizzas de 10.000 pessoas", quantasPizzas(10000));
+    ```
+
+  
+
+  
 
 
 
