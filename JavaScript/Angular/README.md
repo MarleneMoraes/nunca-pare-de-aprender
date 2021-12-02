@@ -50,7 +50,7 @@ Os componentes são trechos de códigos que compõem a sua tela. No caso do Angu
 
 - Pastas do projeto
 
-  `app`: pasta principal de componente. Os componentes em um geral se 
+  `app`: pasta principal de componente. Os componentes por padrão são nomeados por "app", que pode ser renomeado pelo desenvolvedor, caso desejar.
 
   `assets`: pasta referente aos arquivos de imagens, fontes, vídeos.
 
@@ -76,6 +76,9 @@ import { Component } from '@angular/core';
 **Interpolação de elementos**
 
 Há como fazer interpolação de elementos inserindo duas chaves (`{{}}`) no documento `.html` e inserindo o componente pelo documento typescript `app.components.ts`.
+
+**Diretivas**
+
 
 **Instalações**
 
