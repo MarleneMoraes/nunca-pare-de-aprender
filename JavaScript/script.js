@@ -67,6 +67,51 @@
                 return valor com condição;
             });
         
+        //Remover elementos no array
+            nomeDoArray.shift(); //remove no início do array
+            nomeDoArray.splice(index, numeroMaiorQueZero); //remover no index indicado o valor também indicado. O 0 representa a não-exclusão de elementos
+            nomeDoArray.pop(); //remover no final do array
+
+        //Esvaziar um array
+            //Reatribuir um array: apenas para não-constantes. Há a problemática de não retirar as demais referências do array (uma variável que foi atribuída com o valor anterior, permanece com o valor).
+                nomeDoArray = [];
+            
+            //Apagar todas as referências do array
+                nomeDoArray.length = 0;
+
+            //Utilização do método splice
+                nomeDoArray.splice(0, numeros.length);
+            
+        //Combinação de array
+        	nomeDoArray1 = [valor1, valor2, valor3];
+        	nomeDoArray2 = [valor4, valor5, valor6];
+
+            const nomeDaConstante = nomeDoArray1.concat(nomeDoArray2);
+
+            //Combinação entre os valores declarados
+                nomeDoArray = [valor1, valor2, valor3, valor4, valor5, valor6];
+                const nomeDaConstante = nomeDoArray.join('.'); //adiciona pontos entre os elementos: valor1.valor2.valor3.valor4.valor5.valor6
+
+                //Processo inverso
+                    const nomeDaConstante = nomeDoArray.split('.'); //a cada ponto vira um elemento de array. Pode ser um espaço, traços, etc.
+            
+        //Cópias de array (EcmaScript 6)
+            const nomeDaConstante = [...nomeDoArray1, ...nomeDoArray2];
+
+            //Copiar arrays e adicionar mais valores
+                const nomeDaConstante = [...nomeDoArray1, valor1, ...nomeDoArray2, valor2];
+            
+        //Clone de arrays (EcmaScript 6)
+            const nomeDaConstante1 = [...nomeDaConstante];
+        
+        //Dividir um array
+            nomeDaConstante.slice(index1,index2 - 1); //mostra apenas do índice indicado até o penúltimo índice
+            nomeDaConstante.slice(index); //mostra do índice indicado até o final
+            nomeDaConstante.slice();//slice sem parâmetro imprime por totalidade seus valores
+
+        //Percorrer um array 
+            nomeDoArray.forEach((valor) => console.log(valor));
+            nomeDoArray.forEach((valor, index) => console.log(valor, index)); //valor com o índice ao lado.
 
     //Funções (fuctions) → nomeada com um verbo + substantivo
         //First class function: função que tratada como qualquer outra variável
@@ -111,14 +156,14 @@
                         return ação;
                     };
 
-                //Function arrow: uma function expression simplificada. OBS: function arrow é sempre anônima
+                //Arrow Function: uma function expression simplificada. OBS: function arrow é sempre anônima
                     //os parâmetros podem ser apresentados com ou sem os parênteses
                         let nomeDaVariavel = parametros => { 
                             return ação;
                         };
 
                     //esta função pode ser escrita em uma única linha, mas não pode está escrito return, porque ela automaticamente retorna 
-                        const nomeDaFuncao = parametro => ação;
+                        const nomeDaFuncao = parametro => ação, com ou sem retorno;
                         const nomeDaFuncao = (parametros) => ação;
                 
                 //IIFE - Immediately Invoked Function Expression: função anônima invocada logo em seguida após o fechamento dos parênteses, utilizada em um escopo mais restrito.
@@ -173,7 +218,7 @@
             const nomeDaVariavel1 = nomeDaFuncao(nomeDaPropriedade1, nomeDaPropriedade2, nomeDaPropriedade3);
             
         //Constructor Functions: mesmo objetivo da Factory Functions, em PascalCase e com declaração de objetos, diferente da anterior
-            function Funcao(){
+            function Funcao() {
                 this.nomeDaPropriedade1,
                 this.nomeDaPropriedade2,
                 this.nomeDaPropriedade3, 
@@ -399,6 +444,16 @@
                 date1.toTimeString(); //retorna com os dados do GMT
                 date1.toISOSString(); //formato de data no banco de dados
 
+//Interação com usuário
+    alert('mensagem'); //exibe uma caixa com botão 'ok'
+
+    prompt('Pergunta'); //exibe um alert com input para o usuário responder
+
+    let nomeDaVariavel = prompt('Pergunta'); //armazena o que o usuário respondeu
+
+    if (nomeDaVariavel = 'respostaEsperada'){
+        alert('resposta para o usuário');
+    }
 
 
 
