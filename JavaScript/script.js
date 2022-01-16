@@ -64,7 +64,7 @@
             ];
 
             nomeDoArray1.find(function(element) {
-                return valor com condição;
+                return valorComCondição;
             });
         
         //Remover elementos no array
@@ -163,7 +163,7 @@
                         };
 
                     //esta função pode ser escrita em uma única linha, mas não pode está escrito return, porque ela automaticamente retorna 
-                        const nomeDaFuncao = parametro => ação, com ou sem retorno;
+                        const nomeDaFuncao = parametro => açãoComOuSemRetorno;
                         const nomeDaFuncao = (parametros) => ação;
                 
                 //IIFE - Immediately Invoked Function Expression: função anônima invocada logo em seguida após o fechamento dos parênteses, utilizada em um escopo mais restrito.
@@ -443,6 +443,10 @@
                 date2.toDateString(); //mostra apenas a data com o dia da semana
                 date1.toTimeString(); //retorna com os dados do GMT
                 date1.toISOSString(); //formato de data no banco de dados
+
+//Promisses: carregamento da página de forma paralela, o que agiliza o carregamento da página. 
+
+    
 
 //Interação com usuário
     alert('mensagem'); //exibe uma caixa com botão 'ok'
