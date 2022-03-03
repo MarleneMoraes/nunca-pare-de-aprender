@@ -14,7 +14,7 @@ Linguagem de script (executada em tempo real), com tipagem dinâmica (não preci
 
 - Nome
 
-  Seu nome foi uma jogada de *marketing*, pois a linguagem Java estava em alta no mercado e a NetScape queria dar visibilidade para o JavaScript. Houve algumas linguagens semelhantes criadas em outras empresas, o que fez a NetScape, em 1997, criar o padrão da linguagem com a empresa europeia Ecma, surgindo a linguagem EcmaScript.
+  Seu nome foi uma jogada de *marketing*, pois a linguagem Java estava em alta no mercado e a NetScape queria dar visibilidade para o JavaScript. Houve algumas linguagens semelhantes criadas em outras empresas, o que fez a NetScape, em 1997, criar o padrão da linguagem com a empresa europeia Ecma, surgindo a linguagem EcmaScript. Entretanto, há outra explicação de outros professores de que o JavaScript teve esse nome pela linguagem ter semelhanças com o Java. 
 
    :exclamation: É importante lembrar que JavaScript foi criada para interação na web, o que faz a execução da linguagem precisar de um navegador ou terminal. Em 2010, foi criado a ferramenta que funciona fora do navegador: nodeJS, o que popularizou a saída do JavaScript dos navegadores e trouxe o JavaScript também para o lado do servidor. [Aprenda mais sobre o NodeJS](https://docs.microsoft.com/pt-br/learn/modules/intro-to-nodejs/?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.build-javascript-applications-nodejs)
 
